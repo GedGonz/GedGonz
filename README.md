@@ -1,7 +1,7 @@
 ###  Gerald González @GedGonz
-Hola, soy Gerald González, Ingeniero de Sistemas, me dedico al desarrollo web y me centro en las tecnologias de .NET y Javascript. he trabajado un poco con Angular y NodeJS. En .NET trabajo con tecnologias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y codigo limpio o CleanCode
+Hola, 👋 soy Gerald González, Ingeniero de Sistemas, me dedico al desarrollo web y me centro en las tecnologias de .NET y Javascript. he trabajado un poco con el Framework Angular y NodeJS. En .NET trabajo con tecnologias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y codigo limpio o CleanCode
 
-## Me puedes encontrar en:
+## Me puedes encontrar en 👀:
 
 - Linkedin: https://www.linkedin.com/in/gedgonz/
 - CV Personal: https://gedgonz.github.io/CV
