@@ -7,7 +7,9 @@ export default function Menu() {
                 <div className="container">
 
                     <div className="navbar-brand" href="#inicio">
-                        <a href="#inicio" className="text-black-50">GedGonz</a>
+                        <Link activeClass="active" className="text-black-50" to="inicio" spy={true} smooth={true} duration={500} >
+                            GedGonz
+                        </Link> 
                     </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span className="navbar-toggler-icon"></span>

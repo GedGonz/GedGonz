@@ -3,7 +3,7 @@ import "./Aboutme.css";
 export default function Aboutme() {
     return (
         <section id="about" className="portfolio-section">
-            <div className="container-fluid paddding">
+            <div className="container">
 
                 <div className="row">
 
@@ -113,7 +113,7 @@ export default function Aboutme() {
 
 
                 </div>
-            </div>            
+            </div>             
             <footer>
                 <div class="wave-container">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
