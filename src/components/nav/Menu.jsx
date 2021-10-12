@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./Menu.css";
 export default function Menu() {
     return (
@@ -15,13 +16,19 @@ export default function Menu() {
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav p-2 ml-auto">
                         <li className="nav-item px-2">
-                        <a className="nav-link" href="#inicio">INICIO</a>
+                            <Link activeClass="active" className="nav-link" to="inicio" spy={true} smooth={true} duration={500} >
+                                INICIO
+                            </Link> 
                         </li>
                         <li className="nav-item px-2">
-                        <a className="nav-link" href="#about">SOBRE MÍ</a>
+                            <Link activeClass="active" className="nav-link" to="about" spy={true} smooth={true} duration={500} >
+                                SOBRE MÍ
+                            </Link> 
                         </li>
                         <li className="nav-item px-2">
-                        <a className="nav-link" href="#proyectSs">PROYECTOS</a>
+                            <Link activeClass="active" className="nav-link" to="proyects" spy={true} smooth={true} duration={500} >
+                                PROYECTOS
+                            </Link> 
                         </li>
                         <li className="nav-item px-2">
                         <a className="nav-link" href="https://gedgonz.github.io/CV/files/Curriculum%20Vitae.pdf">CV</a>

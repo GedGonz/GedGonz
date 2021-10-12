@@ -77,3 +77,34 @@
     border-radius: 200%;
   
 }
+.informationme {
+    font-size: 20px;
+    color: #222121bf;
+}
+
+.informationme p {
+    font-size: 15px;
+    color: #222121bf;
+}
+
+.informationme i {
+    font-size: 50px;
+    padding: 5px
+}
+
+.informationme .list-data {
+    padding-left: 10px
+}
+
+.title_info {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.title_info_one {
+    font-weight: bold;
+    font-size: 25px !important;
+    text-align: left;
+    color: #222121bf;
+}
