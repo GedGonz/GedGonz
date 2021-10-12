@@ -1,0 +1,104 @@
+
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
+.cabecera{
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    background-color: rgb(255, 255, 255);
+    color: #222121bf;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+        
+}
+
+.cabecera img{
+    width: 15rem;
+    height: 15rem;
+    border: 0.4rem solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.cabecera h1{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 1rem 0.5rem 1rem;
+}
+
+.cabecera h3{
+    font-size: 1.25rem;
+    color:#23b8ff;
+}
+
+.presentation {
+    color: #666666;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.presentation h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #222121bf;
+}
+
+.presentation h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222121bf;
+}
+
+.presentation p {
+    font-size: 40px;
+    color: #222121bf;
+    font-weight: bold;
+}
+
+.presentation p span {
+    color: #23b8ff;
+}
+.pt-lg-20 {
+    padding-top: 100px;
+}
+
+.pt-lg-30 {
+    padding-top: 200px;
+}
+
+.pt-lg-10 {
+    padding-top: 50px;
+}
+
+.ml-l-16 {
+    margin-left: 210px;
+}
+
+.canvas {
+    position: relative;
+}
+
+.container-fluid .social-links {
+    margin-top: 40px;
+    display: flex;
+}
+
+.container-fluid .social-links a {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(52 50 50 / 69%);
+    color: #fff;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.container-fluid .social-links a:hover {
+    background: #3e88e7;
+}
