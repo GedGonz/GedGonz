@@ -1,21 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./Menu.css";
+
+
+
 export default function Menu() {
+
+    var [getToggle, setToggle] = useState(false);
+
+    function toggleMenu(){
+        console.log("emtra");
+        setToggle(!getToggle);
+      }
+    const show = (getToggle) ? "show" : "" ;
+
+
     return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div className="container">
 
-                    <div className="navbar-brand" href="#inicio">
+                    <div className="navbar-brand">
                         <Link activeClass="active" className="text-black-50" to="inicio" spy={true} smooth={true} duration={500} >
                             GedGonz
                         </Link> 
                     </div>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <button onClick={ toggleMenu } className="navbar-toggler" type="button" data-toggle="collapse" >
                     <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarResponsive">
+                    <div className={"collapse navbar-collapse " + show}>
                     <ul className="navbar-nav p-2 ml-auto">
                         <li className="nav-item px-2">
                             <Link activeClass="active" className="nav-link" to="inicio" spy={true} smooth={true} duration={500} >
