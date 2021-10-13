@@ -18,12 +18,6 @@
 
 
 @media (max-width: 765px) {
-    .presentation h1 {
-        font-size: 35px;
-    }
-    .presentation p {
-        font-size: 20px;
-    }
     .pt-lg-20 {
         padding-top: 5px;
     }
@@ -44,9 +38,7 @@
     footer {
         position: relative !important;
     }
-    .presentation h3 {
-        font-size: 18px !important;
-    }
+
 }
 
 @media screen and (min-width: 320px) and (max-width:480px) {
@@ -65,7 +57,10 @@
     transform-origin: bottom;
     animation: animateWave 2000ms cubic-bezier(0.56, 1, 0.48, 1) forwards;
 }
-
+a:hover {
+    color: rgb(52 50 50 / 69%)!important;
+    text-decoration: none !important;
+}
 .picture {
     border-radius: 100%;
     width: 80%;
@@ -89,7 +84,8 @@
 
 .informationme i {
     font-size: 50px;
-    padding: 5px
+    padding: 5px;
+    display: inline-block;
 }
 
 .informationme .list-data {

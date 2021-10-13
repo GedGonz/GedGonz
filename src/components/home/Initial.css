@@ -60,6 +60,35 @@
 .presentation p span {
     color: #23b8ff;
 }
+
+@media (max-width: 765px) {
+    .presentation h1 {
+        font-size: 35px;
+    }
+    .presentation p {
+        font-size: 20px;
+    }
+    .pt-lg-20 {
+        padding-top: 5px;
+    }
+ 
+    .backgroundimg {
+        width: 100% !important;
+    }
+    .container_image {
+        margin: 100px 100px 0px 100px !important;
+    }
+    .pircure_anime1 {
+        width: 100% !important;
+        height: 400px !important;
+    }
+    footer {
+        position: relative !important;
+    }
+    .presentation h3 {
+        font-size: 18px !important;
+    }
+}
 .pt-lg-20 {
     padding-top: 100px;
 }
@@ -101,4 +130,14 @@
 
 .container-fluid .social-links a:hover {
     background: #3e88e7;
+}
+
+.wave-container>svg {
+    transform-origin: bottom;
+    animation: animateWave 2000ms cubic-bezier(0.56, 1, 0.48, 1) forwards;
+}
+@keyframes animateWave {
+    0% {
+        transform: scale(1, 0);
+    }
 }

@@ -16,8 +16,8 @@ export default function Menu() {
 
 
     return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <div className="container">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div className="container-fluid">
 
                     <div className="navbar-brand">
                         <Link activeClass="active" className="text-black-50" to="inicio" spy={true} smooth={true} duration={500} >
