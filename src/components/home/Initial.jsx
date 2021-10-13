@@ -10,7 +10,7 @@ export default function Initial() {
                     </div>
                     <div className="col-md-6">
                         <div className="presentation">
-                            <h1 className=" pt-lg-20"> Gerald Gonzalez Zeledon</h1>
+                            <h1 className="initial-pt-lg-20"> Gerald Gonzalez Zeledon</h1>
                                 
                             <p><TypewriterComponent classNameName="typed"
                                 options={{

@@ -60,6 +60,10 @@
 .presentation p span {
     color: #23b8ff;
 }
+.initial-pt-lg-20 {
+    padding-top: 100px;
+}
+
 
 @media (max-width: 765px) {
     .presentation h1 {
@@ -68,8 +72,8 @@
     .presentation p {
         font-size: 20px;
     }
-    .pt-lg-20 {
-        padding-top: 5px;
+    .initial-pt-lg-20 {
+        padding-top: 50px;
     }
  
     .backgroundimg {
@@ -88,9 +92,6 @@
     .presentation h3 {
         font-size: 18px !important;
     }
-}
-.pt-lg-20 {
-    padding-top: 100px;
 }
 
 .pt-lg-30 {
