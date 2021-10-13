@@ -20,7 +20,7 @@ export default function Menu() {
                 <div className="container-fluid">
 
                     <div className="navbar-brand">
-                        <Link activeClass="active" className="text-black-50" to="inicio" spy={true} smooth={true} duration={500} >
+                        <Link activeClass="active" className="text-black-50" to="inicio" spy={true} smooth={true} duration={800} >
                             GedGonz
                         </Link> 
                     </div>
@@ -31,17 +31,17 @@ export default function Menu() {
                     <div className={"collapse navbar-collapse " + show}>
                     <ul className="navbar-nav p-2 ml-auto">
                         <li className="nav-item px-2">
-                            <Link activeClass="active" className="nav-link" to="inicio" spy={true} smooth={true} duration={500} >
+                            <Link activeClass="active" className="nav-link" to="inicio" spy={true} smooth={true} duration={900} >
                                 INICIO
                             </Link> 
                         </li>
                         <li className="nav-item px-2">
-                            <Link activeClass="active" className="nav-link" to="about" spy={true} smooth={true} duration={500} >
+                            <Link activeClass="active" className="nav-link" to="about" spy={true} smooth={true} duration={900} >
                                 SOBRE MÍ
                             </Link> 
                         </li>
                         <li className="nav-item px-2">
-                            <Link activeClass="active" className="nav-link" to="proyects" spy={true} smooth={true} duration={500} >
+                            <Link activeClass="active" className="nav-link" to="proyects" spy={true} smooth={true} duration={900} >
                                 PROYECTOS
                             </Link> 
                         </li>
