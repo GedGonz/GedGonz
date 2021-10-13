@@ -10,7 +10,7 @@ export default function Aboutme() {
                     <div className="col-md-3">
                         <div className="container_image">
                             <div className="backgroundimg">
-                                <img className="picture" src="https://media-exp1.licdn.com/dms/image/C4E03AQFqOoUJUpN3GA/profile-displayphoto-shrink_200_200/0/1630903424428?e=1637193600&v=beta&t=Phv0v1-owrU0QGaASdmgAKJAlVEj4LlMTynWKTtvA18" alt="" />
+                                <img className="picture" src="https://scontent.fmga4-1.fna.fbcdn.net/v/t31.18172-8/27173987_10215533812245529_6245819946859810664_o.jpg?_nc_cat=108&ccb=1-5&_nc_sid=174925&_nc_ohc=GOeSirRp0qcAX-wLbUL&_nc_ht=scontent.fmga4-1.fna&oh=18eae98b946ae547623fda6370d368c9&oe=618BC540" alt="" />
 
                             </div>
                         </div>
