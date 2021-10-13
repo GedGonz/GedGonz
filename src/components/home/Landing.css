@@ -57,7 +57,9 @@
     font-weight: bold;
 }
 
-.presentation p span {
+.presentation span {
+    font-size: 40px;
+    font-weight: bold;
     color: #23b8ff;
 }
 .initial-pt-lg-20 {
@@ -69,7 +71,7 @@
     .presentation h1 {
         font-size: 35px;
     }
-    .presentation p {
+    .presentation span {
         font-size: 20px;
     }
     .initial-pt-lg-20 {
