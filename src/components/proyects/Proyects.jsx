@@ -1,4 +1,5 @@
 import React from 'react'
+import TypewriterComponent from 'typewriter-effect';
 import  "./Proyects.css";
 export default function Proyects() {
     return (
@@ -171,10 +172,19 @@ export default function Proyects() {
                     </div>
                 </div>
             </div>
-            <div className="presentation">
-                <h3 className=" pt-lg-30 text-center"><span className="typed" /></h3>
-            </div>
+                <h3 class=" pt-lg-30 text-center"><TypewriterComponent classNameName="pt-lg-30 text-center typed"
+                                options={{
+                                    strings: ["Sigo trabajando en mas proyectos!","Estaran en poco tiempo..","Ven y regresa para ver mas!  😅"],
+                                    autoStart: true,
+                                    loop: true,
+                                    typeSpeed: 65,
+                                    backSpeed: 65
+                                }}
+                                />
+                </h3>
+
             <footer>
+                
                 <div className="wave-container">
                     <svg id='canvas' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L60,138.7C120,149,240,171,360,160C480,149,600,107,720,85.3C840,64,960,64,1080,64C1200,64,1320,64,1380,64L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
