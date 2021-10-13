@@ -22,9 +22,6 @@ export default function Initial() {
                                 }}
                                 />
                             </p>
-                            <p className="text-center">
-                                <a className="down" href="#aboutme" data-scroll><i className="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-                            </p>
                             <div className="social-links">
                                 <a href="https://www.linkedin.com/in/gedgonz" target="_blank" className="linkedin"><i className="bx bxl-linkedin" title="Mi linkedin"></i></a>
                                 <a href="https://www.github.com/gedgonz" target="_blank" className="github"><i className="bx bxl-github" title="Mi github"></i></a>

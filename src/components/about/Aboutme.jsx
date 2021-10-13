@@ -56,7 +56,7 @@ export default function Aboutme() {
 
                     <div className="col-md-3">
 
-                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                        
                         <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xsnsvpbs.json" background="transparent" speed="1" style={{width: 300, height: 300}} loop autoplay></lottie-player>
 
 
