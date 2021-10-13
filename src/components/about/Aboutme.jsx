@@ -18,12 +18,12 @@ export default function Aboutme() {
                     </div>
                     <div className="col-md-9">
                         <div className="about">
-                            <h3>Hola!, 👋 mi nombre es Gerald González </h3>
+                            <h3>👋 Hola, Soy <span>Gerald González</span> </h3>
                                 <p className="text-justify">
-                                    Soy una persona apasionada que se esfuerza por construir y aplicar algoritmos para resolver problemas de la industria del mundo real.
+                                    Una persona apasionada que se esfuerza por construir y aplicar algoritmos para resolver problemas de la industria del mundo real.
                                 </p>
                                 <p className="text-justify">
-                                    Me dedico al desarrollo de software y me centro en las tecnologias de .NET y Javascript. he trabajado con el Framework Angular y NodeJS. En .NET trabajo con tecnologias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y
+                                    Me dedico al desarrollo de software y me centro en las tecnologias de dotNet y Javascript. he trabajado con el Framework Angular y NodeJS. En dotNet trabajo con tecnologias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y
                                     codigo limpio o CleanCode
                                 </p>
 

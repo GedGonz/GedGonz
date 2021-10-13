@@ -1,8 +1,11 @@
+.about span {
+    color: #23b8ff;
+}
 
-    .portfolio-section{
+.portfolio-section{
         padding-top: 8rem;
 
-    } 
+} 
 
 .portfolio-section p{
     color: rgb(2, 29, 68); 
