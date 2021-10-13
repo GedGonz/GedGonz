@@ -115,9 +115,9 @@ export default function Aboutme() {
                 </div>
             </div>             
             <footer>
-                <div class="wave-container">
+                <div className="wave-container">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#0099ff" fill-opacity="1" d="M0,192L1440,0L1440,320L0,320Z"></path>
+                    <path fill="#0099ff" fillOpacity="1" d="M0,192L1440,0L1440,320L0,320Z"></path>
                 </svg>
                 </div>
             </footer>

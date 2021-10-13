@@ -20,7 +20,7 @@ export default function Proyects() {
                         <div className="contents-left">
                             <p className="title_info_one">BlueBank </p>
                             <p className="text-justify">
-                                Estas es una pequeña aplicación web que realiza la gestion de cuenta de ahorro de un banco que se conecta para consumir los datos de una API desarrollada en .NetCore,
+                                Estas es una pequeña aplicación web que realiza la gestion de cuenta de ahorro de un banco que se conecta para consumir los datos de una API desarrollada en DotNetCore,
                                 el backend utiliza una arquitectura limpia, con patrones de diseño, con los principios DDD, gestion de logs y el uso de JWT
                             </p>
                             <div className="text-center Detailproyect">
@@ -173,9 +173,9 @@ export default function Proyects() {
                 </div>
             </div>
             <div className="presentation">
-                <h3 class=" pt-lg-30 text-center"><TypewriterComponent classNameName="pt-lg-30 text-center typed"
+                <h3 className=" pt-lg-30 text-center"><TypewriterComponent classNameName="pt-lg-30 text-center typed"
                                 options={{
-                                    strings: ["Sigo trabajando en mas proyectos!","Estaran en poco tiempo..","Ven y regresa para ver mas!  😅"],
+                                    strings: ["Sigo trabajando en más proyectos!","Estarán en poco tiempo..","Ven y regresa para ver más!  😅"],
                                     autoStart: true,
                                     loop: true,
                                     typeSpeed: 65,
@@ -187,7 +187,7 @@ export default function Proyects() {
             <footer>
                 
                 <div className="wave-container">
-                    <svg id='canvas' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L60,138.7C120,149,240,171,360,160C480,149,600,107,720,85.3C840,64,960,64,1080,64C1200,64,1320,64,1380,64L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                    <svg id='canvas' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,128L60,138.7C120,149,240,171,360,160C480,149,600,107,720,85.3C840,64,960,64,1080,64C1200,64,1320,64,1380,64L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
                 </div>
             </footer>
