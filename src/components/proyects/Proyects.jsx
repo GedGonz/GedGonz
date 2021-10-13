@@ -20,7 +20,7 @@ export default function Proyects() {
                         <div className="contents-left">
                             <p className="title_info_one">BlueBank </p>
                             <p className="text-justify">
-                                Estas es una pequeña aplicacion web que realiza la gestion de cuenta de ahorro de un banco que se conecta para consumir los datos de una API desarrollada en .NetCore,
+                                Estas es una pequeña aplicación web que realiza la gestion de cuenta de ahorro de un banco que se conecta para consumir los datos de una API desarrollada en .NetCore,
                                 el backend utiliza una arquitectura limpia, con patrones de diseño, con los principios DDD, gestion de logs y el uso de JWT
                             </p>
                             <div className="text-center Detailproyect">
@@ -102,7 +102,7 @@ export default function Proyects() {
                         <div className="contents-right">
                             <p className="title_info_one">BlogJS </p>
                             <p className="text-justify">
-                                Esta aplicación hace la gestion y  creacion de post sobre el tema que tu prefieras, esta aplicacion se desarrollo en NodeJS, Express y Mongodb
+                                Esta aplicación hace la gestion y  creación de post sobre el tema que tu prefieras, esta aplicacion se desarrollo en NodeJS, Express y Mongodb
                             </p>
                             <div className="text-center Detailproyect">
                                 <i className="devicon-javascript-plain colored"></i>
@@ -157,7 +157,7 @@ export default function Proyects() {
                         <div className="contents-right">
                             <p className="title_info_one">React Movies </p>
                             <p className="text-justify">
-                                Esta es una pequeña app que la desarrolle como practica de estudio sobre reactJS, es una aplicación donde muestra el top de peliculas, buscador y un detalle de cada una.
+                                Esta es una pequeña aplicación que la desarrolle como practica de estudio sobre ReactJS, esta muestra el top de peliculas, buscador y su detalle.
                             </p>
                             <div className="text-center Detailproyect">
                                 <i className="devicon-react-original colored"></i>
@@ -172,6 +172,7 @@ export default function Proyects() {
                     </div>
                 </div>
             </div>
+            <div className="presentation">
                 <h3 class=" pt-lg-30 text-center"><TypewriterComponent classNameName="pt-lg-30 text-center typed"
                                 options={{
                                     strings: ["Sigo trabajando en mas proyectos!","Estaran en poco tiempo..","Ven y regresa para ver mas!  😅"],
@@ -182,7 +183,7 @@ export default function Proyects() {
                                 }}
                                 />
                 </h3>
-
+            </div>
             <footer>
                 
                 <div className="wave-container">

@@ -10,7 +10,7 @@ export default function Initial() {
                     </div>
                     <div className="col-md-6">
                         <div className="presentation">
-                            <h1 className="initial-pt-lg-20"> Gerald Gonzalez Zeledon</h1>
+                            <h1 className="initial-pt-lg-20"> Gerald González Zeledón</h1>
                                 
                             <p><TypewriterComponent classNameName="typed"
                                 options={{
@@ -25,7 +25,7 @@ export default function Initial() {
                             <div className="social-links">
                                 <a href="https://www.linkedin.com/in/gedgonz" target="_blank" className="linkedin"><i className="bx bxl-linkedin" title="Mi linkedin"></i></a>
                                 <a href="https://www.github.com/gedgonz" target="_blank" className="github"><i className="bx bxl-github" title="Mi github"></i></a>
-                                <a href="mailto:gedgonz7@gmail.com" target="_blank" className="google"><i className="bx bxl-google" title="Mi email"></i></a>
+                                <a href="mailto:gedgonz7@gmail.com" target="_blank" className="google"><i className="bx bxl-google" title="Escribeme un mail"></i></a>
                                 <a href="https://gedgonz.github.io/CV" target="_blank" className="google"><i className="bx bxs-file-html" title="Mas sobre mi!"></i></a>
 
                             </div>
