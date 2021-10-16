@@ -12,7 +12,7 @@ function App() {
       <Landing className="mt-10"/>
       <Aboutme />
       <Proyects />
-      <Footer></Footer>
+      <Footer/>
     </div>
   );
 }

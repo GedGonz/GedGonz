@@ -46,7 +46,7 @@ export default function Menu() {
                             </Link> 
                         </li>
                         <li className="nav-item px-2">
-                        <a className="nav-link" href="https://gedgonz.github.io/CV/files/Curriculum%20Vitae.pdf">CV</a>
+                        <a className="nav-link" href="https://gedgonz.github.io/CV/files/Curriculum%20Vitae.pdf">CV </a>
                         </li>
                     </ul>
                     </div>

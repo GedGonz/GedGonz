@@ -1,5 +1,6 @@
 import React from 'react'
 import TypewriterComponent from 'typewriter-effect';
+import ButonLink from '../button-link/ButonLink';
 import Next from '../FloatButton/Next';
 import "./Landing.css";
 export default function Landing() {
@@ -23,10 +24,14 @@ export default function Landing() {
                                 }}
                                 />
                             <div className="social-links">
-                                <a href="https://www.linkedin.com/in/gedgonz"  className="linkedin"><i className="bx bxl-linkedin" title="Mi linkedin"></i></a>
-                                <a href="https://www.github.com/gedgonz"  className="github"><i className="bx bxl-github" title="Mi github"></i></a>
-                                <a href="mailto:gedgonz7@gmail.com"  className="google"><i className="bx bxl-google" title="Escribeme un mail"></i></a>
-                                <a href="https://gedgonz.github.io/CV"  className="google"><i className="bx bxs-file-html" title="Mas sobre mi!"></i></a>
+                                <ButonLink link="https://www.linkedin.com/in/gedgonz" classtype="linkedin" title="Mi linkedin" />
+                                <ButonLink link="https://www.github.com/gedgonz" classtype="github" title="Mi github" />
+                                <ButonLink link="mailto:gedgonz7@gmail.com" classtype="mail" title="Escribeme un mail" />
+                                <ButonLink link="https://gedgonz.github.io/CV" classtype="show" title="Mas sobre mi!" /> 
+                                {/* <a href="https://www.linkedin.com/in/gedgonz"  className="linkedin"><i className="bx bxl-linkedin" title="Mi linkedin"></i></a> */}
+                                {/* <a href="https://www.github.com/gedgonz"  className="github"><i className="bx bxl-github" title="Mi github"></i></a> */}
+                                {/* <a href="mailto:gedgonz7@gmail.com"  className="google"><i className="bx bxl-google" title="Escribeme un mail"></i></a> */}
+                                {/* <a href="https://gedgonz.github.io/CV"  className="google"><i className="bx bxs-file-html" title="Mas sobre mi!"></i></a> */}
 
                             </div>
 
