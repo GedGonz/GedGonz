@@ -59,7 +59,7 @@
 
 @media screen and (min-width: 320px) and (max-width:480px) {
     .informationme i {
-        padding: 40px !important;
+        padding: 20px !important;
     }
 }
 
@@ -98,7 +98,7 @@ a:hover {
 }
 
 .informationme i {
-    font-size: 50px;
+    font-size: 35px;
     padding: 5px;
     display: inline-block;
 }
@@ -116,7 +116,7 @@ a:hover {
 .title_info_one {
     font-weight: bold;
     font-size: 25px !important;
-    text-align: left;
+    text-align: center;
     color: #222121bf;
 }
 

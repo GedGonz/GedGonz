@@ -4,17 +4,13 @@ export default function Aboutme() {
     return (
         <section id="about" className="portfolio-section">
             <div className="container">
-
                 <div className="row">
-
                     <div className="col-md-3">
                         <div className="container_image">
                             <div className="backgroundimg">
                                 <img className="picture" src="https://scontent.fmga4-1.fna.fbcdn.net/v/t31.18172-8/27173987_10215533812245529_6245819946859810664_o.jpg?_nc_cat=108&ccb=1-5&_nc_sid=174925&_nc_ohc=GOeSirRp0qcAX-wLbUL&_nc_ht=scontent.fmga4-1.fna&oh=18eae98b946ae547623fda6370d368c9&oe=618BC540" alt="" />
-
                             </div>
                         </div>
-
                     </div>
                     <div className="col-md-9">
                         <div className="about">
@@ -26,7 +22,6 @@ export default function Aboutme() {
                                     Me dedico al desarrollo de software y me centro en las tecnologias de dotNet y Javascript. he trabajado con el Framework Angular y NodeJS. En dotNet trabajo con tecnologias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y
                                     codigo limpio o CleanCode
                                 </p>
-
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <ul>
@@ -45,23 +40,13 @@ export default function Aboutme() {
                                         </ul>
                                     </div>
                                 </div>
-
-
-
                         </div>
                     </div>
                 </div>
 
                 <div className="row informationme">
 
-                    <div className="col-md-3">
-
-                        
-                        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xsnsvpbs.json" background="transparent" speed="1" style={{width: 300, height: 300}} loop autoplay></lottie-player>
-
-
-                    </div>
-                    <div className="col-md-9">
+                    <div className="col-md-12">
                         <div>
                             <p className="title_info_one">Conocimientos en tecnologías </p>
                             <hr/>
@@ -69,49 +54,42 @@ export default function Aboutme() {
                         <div className="row">
                             <div className="col-lg-3 text-center">
                                 <p className="title_info">Lenguajes</p>
-                                <i className="devicon-csharp-plain-wordmark colored"></i>
-                                <i className="devicon-java-plain-wordmark colored"></i>
-                                <i className="devicon-typescript-original colored"></i>
-                                <i className="devicon-javascript-plain colored"></i>
+                                <i className="devicon-csharp-plain-wordmark "></i>
+                                <i className="devicon-java-plain-wordmark "></i>
+                                <i className="devicon-typescript-original "></i>
+                                <i className="devicon-javascript-plain "></i>
                             </div>
 
                             <div className="col-lg-3 text-center">
                                 <p className="title_info">Front-End</p>
-                                <i className="devicon-angularjs-plain colored"></i>
-                                <i className="devicon-bootstrap-plain colored"></i>
-                                <i className="devicon-html5-plain-wordmark colored"></i>
-                                <i className="devicon-css3-plain-wordmark colored"></i>
+                                <i className="devicon-angularjs-plain "></i>
+                                <i className="devicon-bootstrap-plain "></i>
+                                <i className="devicon-html5-plain-wordmark "></i>
+                                <i className="devicon-css3-plain-wordmark "></i>
 
                             </div>
 
                             <div className="col-lg-3 text-center">
                                 <p className="title_info">Back-End</p>
-                                <i className="devicon-nodejs-plain colored"></i>
-                                <i className="devicon-express-original colored"></i>
-                                <i className="devicon-dotnetcore-plain colored"></i>
-                                <i className="devicon-mongodb-plain-wordmark colored"></i>
-                                <i className="devicon-mysql-plain-wordmark colored"></i>
-                                <i className="devicon-redis-plain colored"></i>
-                                <i className="devicon-microsoftsqlserver-plain colored"></i>
-                                
-                                
+                                <i className="devicon-nodejs-plain "></i>
+                                <i className="devicon-express-original "></i>
+                                <i className="devicon-dotnetcore-plain "></i>
+                                <i className="devicon-mongodb-plain-wordmark "></i>
+                                <i className="devicon-mysql-plain-wordmark "></i>
+                                <i className="devicon-redis-plain "></i>
+                                <i className="devicon-microsoftsqlserver-plain "></i>
                                 
                             </div>
                             <div className="col-lg-3 text-center">
                                 <p className="title_info">Tools</p>
-                                <i className="devicon-git-plain colored"></i>
-                                <i className="devicon-visualstudio-plain colored"></i>
-                                <i className="devicon-vscode-plain colored"></i>
-                                <i className="devicon-github-plain colored"></i>
-                                <i className="devicon-docker-plain colored"></i>
-                                
-
+                                <i className="devicon-git-plain "></i>
+                                <i className="devicon-visualstudio-plain "></i>
+                                <i className="devicon-vscode-plain "></i>
+                                <i className="devicon-github-plain "></i>
+                                <i className="devicon-docker-plain "></i>
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>             
 

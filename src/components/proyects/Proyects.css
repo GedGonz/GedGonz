@@ -1,7 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
-.presentation {
+.title_proyect {
+    font-weight: bold;
+    font-size: 25px !important;
+    text-align: center;
+    color: #222121bf;
+}
+
+.title_proyect span {
+    font-size: 25px !important;
+    font-weight: bold;
+    color: #23b8ff;
+}
+
+.message span {
+    font-size: 40px;
+    font-weight: bold;
+    color: #23b8ff;
+}
+
+.message {
     color: #666666;
     font-family: 'Rubik', sans-serif !important;
 }
@@ -10,7 +29,7 @@
 }
 
 .Detailproyect i {
-    font-size: 60px;
+    font-size: 40px;
     padding: 10px !important;
 }
 
