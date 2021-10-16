@@ -1,5 +1,6 @@
 import React from 'react'
 import TypewriterComponent from 'typewriter-effect';
+import Next from '../FloatButton/Next';
 import "./Landing.css";
 export default function Landing() {
     return (
@@ -42,6 +43,7 @@ export default function Landing() {
 
                 </div>
             </footer>
+            <Next/>
             </header>
     )
 }
