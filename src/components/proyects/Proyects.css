@@ -4,7 +4,6 @@
 .title_proyect {
     font-weight: bold;
     font-size: 25px !important;
-    text-align: center;
     color: #222121bf;
 }
 
@@ -117,7 +116,13 @@
         border-radius: 10px;
     }
 }
+@media (max-width: 765px) {
 
+    .message span {
+        font-size: 20px;
+    }
+
+}
 @media only screen and (min-width: 550px) {
     .images-left img {
         float: left;
