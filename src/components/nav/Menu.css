@@ -36,5 +36,6 @@
 }
 
 .bg-light {
-    background-color: #ffffff!important;
+    /* background-color: #ffffff!important; */
+    background: transparent !important;
 }

@@ -37,12 +37,12 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <footer>
-                <div className="wave-container">
+
+            <div className="wave-container">
                     <svg id='canvas' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,128L60,138.7C120,149,240,171,360,160C480,149,600,107,720,85.3C840,64,960,64,1080,64C1200,64,1320,64,1380,64L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
-                </div>
-            </footer>
+            </div>
+
             <Next/>
             </header>
     )
