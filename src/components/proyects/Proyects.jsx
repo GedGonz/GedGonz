@@ -18,8 +18,8 @@ export default function Proyects() {
                         <div className="contents-left">
                             <p className="title_proyect"><span>Blue</span>Bank </p>
                             <p className="text-justify">
-                                Estas es una pequeña aplicación web que realiza la gestion de cuenta de ahorro de un banco que se conecta para consumir los datos de una API desarrollada en DotNetCore,
-                                el backend utiliza una arquitectura limpia, con patrones de diseño, con los principios DDD, gestion de logs y el uso de JWT
+                            Estas es una pequeña aplicación web que realiza la gestión de cuenta de ahorro de un banco que se conecta para consumir los datos de una API desarrollada en DotNetCore,
+                            el backend utiliza una arquitectura limpia, con patrones de diseño, con los principios DDD, gestión de logs y el uso de JWT
                             </p>
                             <div className="text-center Detailproyect">
                                 <i className="devicon-typescript-original colored"></i>
@@ -43,8 +43,8 @@ export default function Proyects() {
                         <div className="contents-right">
                             <p className="title_proyect"><span>Funko</span>Pop</p>
                             <p className="text-justify">
-                                Esta es una pequeña aplicación donde se con una landingpage donde muestra un careusel de productos Funko Pop, 
-                                asi mismo un buscador en donde se demuestra la comunicacion entre componentes, esta consume una api creada en NodeJS
+                            Esta es una pequeña aplicación con una landingpage donde muestra un Carrusel de productos Funko Pop,
+                            así mismo un buscador en donde se demuestra la comunicación entre componentes, esta consume una API creada en Node.js
                             </p>
                             <div className="text-center Detailproyect">
                                 <i className="devicon-typescript-original colored"></i>
@@ -68,8 +68,8 @@ export default function Proyects() {
                         <div className="contents-left">
                             <p className="title_proyect"><span>Rick</span>&Morty </p>
                             <p className="text-justify">
-                                Esta es una pequeña aplicación donde hace la buqueda de los personajes de la famosa serie de Rick y Morty!.
-                                en esta app se demuestra el consumo de una api y el scroll infinito.
+                            Esta es una pequeña aplicación donde hace la búsqueda de los personajes de la famosa serie de Rick y Morty!.
+                            En esta app se demuestra el consumo de una API y el scroll infinito.
                             </p>
                             <div className="text-center Detailproyect">
                                 <i className="devicon-typescript-original colored"></i>
@@ -92,7 +92,7 @@ export default function Proyects() {
                         <div className="contents-right">
                             <p className="title_proyect"><span>Blog</span>JS</p>
                             <p className="text-justify">
-                                Esta aplicación hace la gestion y  creación de post sobre el tema que tu prefieras, esta aplicacion se desarrollo en NodeJS, Express y Mongodb
+                            Esta aplicación hace la gestión y creación de post sobre el tema que tú prefieras, esta aplicación se desarrolló en Node.js, Express y Mongodb.
                             </p>
                             <div className="text-center Detailproyect">
                                 <i className="devicon-javascript-plain colored"></i>
@@ -116,7 +116,7 @@ export default function Proyects() {
                         <div className="contents-left">
                             <p className="title_proyect"><span>Github</span>API</p>
                             <p className="text-justify">
-                                En esta aplicación hace uso de la api de github en donde al buscar un usuario muestra sus datos principales y sus repositorios.
+                            En esta aplicación hace uso de la API de GitHub en donde al buscar un usuario muestra sus datos principales y sus repositorios.
                             </p>
                             <div className="text-center Detailproyect">
                                 <i className="devicon-typescript-original colored"></i>
@@ -140,7 +140,7 @@ export default function Proyects() {
                         <div className="contents-right">
                             <p className="title_proyect"><span>React</span> Movies </p>
                             <p className="text-justify">
-                                Esta es una pequeña aplicación que la desarrolle como practica de estudio sobre ReactJS, esta muestra el top de peliculas, buscador y su detalle.
+                                Esta es una pequeña aplicación que la desarrolle como practica de estudio sobre ReactJS, esta muestra el top de películas, buscador y su detalle.
                             </p>
                             <div className="text-center Detailproyect">
                                 <i className="devicon-react-original colored"></i>
