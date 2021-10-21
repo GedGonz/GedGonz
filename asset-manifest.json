@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/GedGonz/static/css/main.54b91562.chunk.css",
-    "main.js": "/GedGonz/static/js/main.2953a297.chunk.js",
-    "main.js.map": "/GedGonz/static/js/main.2953a297.chunk.js.map",
+    "main.css": "/GedGonz/static/css/main.522687cd.chunk.css",
+    "main.js": "/GedGonz/static/js/main.c5c8df43.chunk.js",
+    "main.js.map": "/GedGonz/static/js/main.c5c8df43.chunk.js.map",
     "runtime-main.js": "/GedGonz/static/js/runtime-main.8f783bbb.js",
     "runtime-main.js.map": "/GedGonz/static/js/runtime-main.8f783bbb.js.map",
     "static/js/2.a1664a1f.chunk.js": "/GedGonz/static/js/2.a1664a1f.chunk.js",
     "static/js/2.a1664a1f.chunk.js.map": "/GedGonz/static/js/2.a1664a1f.chunk.js.map",
     "index.html": "/GedGonz/index.html",
-    "static/css/main.54b91562.chunk.css.map": "/GedGonz/static/css/main.54b91562.chunk.css.map",
+    "static/css/main.522687cd.chunk.css.map": "/GedGonz/static/css/main.522687cd.chunk.css.map",
     "static/js/2.a1664a1f.chunk.js.LICENSE.txt": "/GedGonz/static/js/2.a1664a1f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8f783bbb.js",
     "static/js/2.a1664a1f.chunk.js",
-    "static/css/main.54b91562.chunk.css",
-    "static/js/main.2953a297.chunk.js"
+    "static/css/main.522687cd.chunk.css",
+    "static/js/main.c5c8df43.chunk.js"
   ]
 }
