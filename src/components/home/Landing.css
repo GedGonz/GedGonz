@@ -70,6 +70,12 @@
 
 
 @media (max-width: 765px) {
+
+
+    .presentation {
+        text-align: center !important;
+    }
+
     .presentation h1 {
         font-size: 35px;
     }
@@ -80,9 +86,6 @@
         padding-top: 50px;
     }
  
-    /* .backgroundimg {
-        width: 100% !important;
-    } */
     .container_image {
         margin: 100px 100px 0px 100px !important;
     }
@@ -95,6 +98,12 @@
     }
     .presentation h3 {
         font-size: 18px !important;
+    }
+
+    .container-fluid .social-links {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center !important;
     }
 }
 
