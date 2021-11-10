@@ -1,5 +1,8 @@
 import React from 'react'
+
+
 import "./Aboutme.css";
+
 export default function Aboutme() {
     return (
         <section id="about" className="portfolio-section">
@@ -8,7 +11,7 @@ export default function Aboutme() {
                     <div className="col-md-3">
                         <div className="container_image">
                             <div className="backgroundimg">
-                                <img className="picture" src="https://scontent.fmga4-1.fna.fbcdn.net/v/t31.18172-8/27173987_10215533812245529_6245819946859810664_o.jpg?_nc_cat=108&ccb=1-5&_nc_sid=174925&_nc_ohc=GOeSirRp0qcAX-wLbUL&_nc_ht=scontent.fmga4-1.fna&oh=18eae98b946ae547623fda6370d368c9&oe=618BC540" alt="" />
+                            <img className="picture" src={process.env.PUBLIC_URL+ '/images/me.jpg'} alt="" />
                             </div>
                         </div>
                     </div>
@@ -22,21 +25,25 @@ export default function Aboutme() {
                                     Me dedico al desarrollo de software y me centro en las tecnologias de dotNet y Javascript. he trabajado con el Framework Angular y NodeJS. En dotNet trabajo con tecnologias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y
                                     codigo limpio o CleanCode
                                 </p>
+                                <p className="text-justify">
+                                    Actualmente me encuentro estudiando react, en ocasiones escribo algún artículo donde enseño lo aprendido en la comunidad <strong>dev.to</strong>
+                                </p>
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <ul>
-                                            <li><i className="fa fa-chevron-right "></i> <strong>edad:</strong>
-                                                <span id="edad"></span>
+                                            <li><i className="fa fa-chevron-right "></i> <strong>Nacionalidad:</strong>
+                                                <span>Nicaragünse</span>
                                             </li>
-                                            <li><i className="fa fa-chevron-right"></i> <strong>telefono:</strong>
+                                            <li><i className="fa fa-chevron-right"></i> <strong>ciudad:</strong> <span>Masaya</span></li>
+                                            {/* <li><i className="fa fa-chevron-right"></i> <strong>telefono:</strong>
                                                 <span>+505 57028362</span>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                     </div>
                                     <div className="col-lg-6">
                                         <ul>
-                                            <li><i className="fa fa-chevron-right"></i> <strong>ciudad:</strong> Masaya, Nicaragua</li>
-                                            <li><i className="fa fa-chevron-right"></i> <strong>Email:</strong> gedgonz7@gmail.com</li>
+                                            {/* <li><i className="fa fa-chevron-right"></i> <strong>ciudad:</strong> Masaya, Nicaragua</li> */}
+                                            {/* <li><i className="fa fa-chevron-right"></i> <strong>Email:</strong> gedgonz7@gmail.com</li> */}
                                         </ul>
                                     </div>
                                 </div>
