@@ -26,8 +26,9 @@ export default function Landing() {
                             <div className="social-links">
                                 <ButonLink link="https://www.linkedin.com/in/gedgonz" classtype="linkedin" title="Mi linkedin" />
                                 <ButonLink link="https://www.github.com/gedgonz" classtype="github" title="Mi github" />
+                                <ButonLink link="https://dev.to/gedgonz" classtype="dev-to" title="Mi blog" />                                 
+                                <ButonLink link="https://gedgonz.github.io/CV" classtype="show" title="Mas sobre mi!" />
                                 <ButonLink link="mailto:gedgonz7@gmail.com" classtype="mail" title="Escribeme un mail" />
-                                <ButonLink link="https://gedgonz.github.io/CV" classtype="show" title="Mas sobre mi!" /> 
                             </div>
 
                         </div>
