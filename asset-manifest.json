@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/GedGonz/static/css/main.522687cd.chunk.css",
-    "main.js": "/GedGonz/static/js/main.c5c8df43.chunk.js",
-    "main.js.map": "/GedGonz/static/js/main.c5c8df43.chunk.js.map",
+    "main.js": "/GedGonz/static/js/main.5f3d6e55.chunk.js",
+    "main.js.map": "/GedGonz/static/js/main.5f3d6e55.chunk.js.map",
     "runtime-main.js": "/GedGonz/static/js/runtime-main.8f783bbb.js",
     "runtime-main.js.map": "/GedGonz/static/js/runtime-main.8f783bbb.js.map",
     "static/js/2.a1664a1f.chunk.js": "/GedGonz/static/js/2.a1664a1f.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.8f783bbb.js",
     "static/js/2.a1664a1f.chunk.js",
     "static/css/main.522687cd.chunk.css",
-    "static/js/main.c5c8df43.chunk.js"
+    "static/js/main.5f3d6e55.chunk.js"
   ]
 }
