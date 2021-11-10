@@ -13,7 +13,7 @@ developer.Love("God","family","C#","JavaScript","and more..");
 
 - 🎓 *[LinkedIn](https://www.linkedin.com/in/gedgonz)*
 - 🧑‍🚀 *[CV Personal](https://gedgonz.github.io/CV)*
-- 📙 *[Portafolio](https://gedgonz.github.io/GedGonz)*
+- 📃 *[Portafolio](https://gedgonz.github.io/GedGonz)*
 
 
 
