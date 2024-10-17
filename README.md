@@ -1,11 +1,11 @@
 ##  Hola!, mi nombre es Gerald González 👋 
-Soy Ingeniero de Sistemas, me dedico al desarrollo de Software y me centro en las tecnologias de DotNET, Javascript. Tengo conocimiento con el Framework Angular y NodeJS. En DotNET trabajo con tecnologias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y codigo limpio.
+Soy Ingeniero de Sistemas, me dedico al desarrollo de Software y me centro en las tecnologias de DotNET, Java, Typescritp. Tengo conocimiento con el Framework Angular, Spring boot y NodeJS. Trato de trabajar con tecnolgias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y codigo limpio.
 
 ```csharp
 var developer = new Developer("Gerald González");
 developer.IAm("Developer Engineer");
-developer.WorkWith(".NetCore","Angular","Redis","Docker");
-developer.KnowledgeIn("NodeJS","SOLID","POO","Clean Code","DDD","UnitTest");
+developer.WorkWith(".NetCore","Angular","Redis","Docker","linux", "Spring", "Jenkins");
+developer.KnowledgeIn("NodeJS","SOLID","POO","Clean Code","DDD","UnitTest", "Design Patterns");
 developer.Love("God","family","C#","JavaScript","and more..");
 ```
 
