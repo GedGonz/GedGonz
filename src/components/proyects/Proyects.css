@@ -132,3 +132,10 @@
     }
 }
 
+.image-custom{
+    margin: 90px 30px 30px 30px;
+}
+
+.icon-costumer > svg{
+    width: 50px;
+}

@@ -143,3 +143,6 @@ a:hover {
     list-style: none;
     padding-bottom: 5px;
 }
+.contains-aboutme{
+    max-width: 1650px !important;
+}

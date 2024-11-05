@@ -6,7 +6,7 @@ import "./Aboutme.css";
 export default function Aboutme() {
     return (
         <section id="about" className="portfolio-section">
-            <div className="container">
+            <div className="container contains-aboutme">
                 <div className="row">
                     <div className="col-md-3">
                         <div className="container_image">
@@ -22,11 +22,8 @@ export default function Aboutme() {
                                     Una persona apasionada que se esfuerza por construir y aplicar algoritmos para resolver problemas de la industria del mundo real.
                                 </p>
                                 <p className="text-justify">
-                                    Me dedico al desarrollo de software y me centro en las tecnologias de dotNet y Javascript. he trabajado con el Framework Angular y NodeJS. En dotNet trabajo con tecnologias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y
+                                    Me dedico al desarrollo de software y me centro en las tecnologias de .Net, Java y Javascript. he trabajado con el Framework como Spring boot, Angular. Trabajo con tecnologias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y
                                     codigo limpio o CleanCode
-                                </p>
-                                <p className="text-justify">
-                                    Actualmente me encuentro estudiando react, en ocasiones escribo algún artículo donde enseño lo aprendido en la comunidad <strong>dev.to</strong>
                                 </p>
                                 <div className="row">
                                     <div className="col-lg-6">
@@ -35,15 +32,12 @@ export default function Aboutme() {
                                                 <span>Nicaragünse</span>
                                             </li>
                                             <li><i className="fa fa-chevron-right"></i> <strong>ciudad:</strong> <span>Masaya</span></li>
-                                            {/* <li><i className="fa fa-chevron-right"></i> <strong>telefono:</strong>
-                                                <span>+505 57028362</span>
-                                            </li> */}
+
                                         </ul>
                                     </div>
                                     <div className="col-lg-6">
                                         <ul>
-                                            {/* <li><i className="fa fa-chevron-right"></i> <strong>ciudad:</strong> Masaya, Nicaragua</li> */}
-                                            {/* <li><i className="fa fa-chevron-right"></i> <strong>Email:</strong> gedgonz7@gmail.com</li> */}
+
                                         </ul>
                                     </div>
                                 </div>
@@ -78,6 +72,8 @@ export default function Aboutme() {
 
                             <div className="col-lg-3 text-center">
                                 <p className="title_info">Back-End</p>
+                                
+                                <i className="devicon-spring-original "></i>
                                 <i className="devicon-nodejs-plain "></i>
                                 <i className="devicon-express-original "></i>
                                 <i className="devicon-dotnetcore-plain "></i>
@@ -85,16 +81,22 @@ export default function Aboutme() {
                                 <i className="devicon-mysql-plain-wordmark "></i>
                                 <i className="devicon-redis-plain "></i>
                                 <i className="devicon-microsoftsqlserver-plain "></i>
+                                <i class="devicon-postgresql-plain"></i>
                                 
                             </div>
                             <div className="col-lg-3 text-center">
                                 <p className="title_info">Tools</p>
+                                <i className="devicon-jenkins-line"></i>
                                 <i className="devicon-git-plain "></i>
                                 <i className="devicon-visualstudio-plain "></i>
-                                <i className="devicon-vscode-plain "></i>
                                 <i className="devicon-github-plain "></i>
+                                <i className="devicon-gitlab-plain"></i>
                                 <i className="devicon-docker-plain "></i>
+                                <i className="devicon-linux-plain"></i>
+                                <i className="devicon-nginx-original"></i>
+                                <i className="devicon-rabbitmq-original"></i>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
