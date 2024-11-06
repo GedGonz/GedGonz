@@ -149,7 +149,7 @@ export default function Proyects() {
                             <br/>
                             <div className="text-center">
                                 <a href="https://github.com/GedGonz/AngularAPIGitHub" className="btn btn-light btn-lg "><i className="fa fa-github"></i></a>
-                                <a href="https://appfindrepository.herokuapp.com" className="btn btn-light btn-lg "><i className="fa fa-eye"></i></a>
+                                <a href="https://gedgonz.github.io/AngularAPIGitHub" className="btn btn-light btn-lg "><i className="fa fa-eye"></i></a>
                             </div>
                         </div>
                     </div>
