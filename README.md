@@ -6,7 +6,7 @@ var developer = new Developer("Gerald González");
 developer.IAm("Developer Engineer");
 developer.WorkWith(".NetCore","Angular","Redis","Docker","linux", "Spring", "Jenkins");
 developer.KnowledgeIn("NodeJS","SOLID","POO","Clean Code","DDD","UnitTest", "Design Patterns");
-developer.Love("God","family","C#","JavaScript","and more..");
+developer.Love("God","family","C#","Java","JavaScript","and more..");
 ```
 
 ## Me puedes encontrar en 👀:
