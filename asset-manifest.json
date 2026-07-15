@@ -1,20 +1,13 @@
 {
   "files": {
-    "main.css": "/GedGonz/static/css/main.e56f24e5.chunk.css",
-    "main.js": "/GedGonz/static/js/main.516be502.chunk.js",
-    "main.js.map": "/GedGonz/static/js/main.516be502.chunk.js.map",
-    "runtime-main.js": "/GedGonz/static/js/runtime-main.0234d446.js",
-    "runtime-main.js.map": "/GedGonz/static/js/runtime-main.0234d446.js.map",
-    "static/js/2.aba322de.chunk.js": "/GedGonz/static/js/2.aba322de.chunk.js",
-    "static/js/2.aba322de.chunk.js.map": "/GedGonz/static/js/2.aba322de.chunk.js.map",
+    "main.css": "/GedGonz/static/css/main.7cbfe928.css",
+    "main.js": "/GedGonz/static/js/main.f376176e.js",
     "index.html": "/GedGonz/index.html",
-    "static/css/main.e56f24e5.chunk.css.map": "/GedGonz/static/css/main.e56f24e5.chunk.css.map",
-    "static/js/2.aba322de.chunk.js.LICENSE.txt": "/GedGonz/static/js/2.aba322de.chunk.js.LICENSE.txt"
+    "main.7cbfe928.css.map": "/GedGonz/static/css/main.7cbfe928.css.map",
+    "main.f376176e.js.map": "/GedGonz/static/js/main.f376176e.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.0234d446.js",
-    "static/js/2.aba322de.chunk.js",
-    "static/css/main.e56f24e5.chunk.css",
-    "static/js/main.516be502.chunk.js"
+    "static/css/main.7cbfe928.css",
+    "static/js/main.f376176e.js"
   ]
 }
