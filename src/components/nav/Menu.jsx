@@ -4,15 +4,15 @@ import "./Menu.css";
 
 
 
-export default function Menu() {
+export default function Menu({ theme, toggleTheme }) {
 
     var [getToggle, setToggle] = useState(false);
 
     function toggleMenu(){
-        console.log("emtra");
         setToggle(!getToggle);
       }
     const show = (getToggle) ? "show" : "" ;
+    const isDark = theme === "dark";
 
 
     return (
@@ -46,7 +46,23 @@ export default function Menu() {
                             </Link> 
                         </li>
                         <li className="nav-item px-2">
+                            <Link activeClass="active" className="nav-link" to="interests" spy={true} smooth={true} duration={900} >
+                                INTERESES
+                            </Link> 
+                        </li>
+                        <li className="nav-item px-2">
                         <a className="nav-link" href="https://gedgonz.github.io/CV/files/CurriculumVitae.pdf">CV </a>
+                        </li>
+                        <li className="nav-item px-2">
+                            <button
+                                type="button"
+                                className="theme-toggle"
+                                onClick={toggleTheme}
+                                aria-label={isDark ? "Activar modo claro" : "Activar modo oscuro"}
+                                title={isDark ? "Modo claro" : "Modo oscuro"}
+                            >
+                                <i className={isDark ? "fa fa-sun-o" : "fa fa-moon-o"}></i>
+                            </button>
                         </li>
                     </ul>
                     </div>

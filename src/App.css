@@ -1,15 +1,118 @@
+:root {
+    --bg: #ffffff;
+    --bg-alt: #f4f7fb;
+    --text-primary: #222121;
+    --text-secondary: #4a5568;
+    --accent: #23b8ff;
+    --accent-strong: #009cff;
+    --card-bg: #ffffff;
+    --border: #e6ebf1;
+    --shadow: rgba(0, 0, 0, 0.15);
+    --navbar-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg: #0f172a;
+    --bg-alt: #111c30;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --accent: #38bdf8;
+    --accent-strong: #0ea5e9;
+    --card-bg: #1e293b;
+    --border: #263248;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --navbar-bg: #0f172a;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App {
+    background-color: var(--bg);
+    transition: background-color 0.3s ease;
+}
+
+/* Scroll reveal animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    will-change: opacity, transform;
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* ===== Dark mode overrides for existing components ===== */
+[data-theme="dark"] header#inicio {
+    background-color: var(--bg);
+}
+
+[data-theme="dark"] .cabecera,
+[data-theme="dark"] .bg-light {
+    background-color: var(--navbar-bg) !important;
+}
+
+[data-theme="dark"] .presentation h1,
+[data-theme="dark"] .presentation h3,
+[data-theme="dark"] .presentation p,
+[data-theme="dark"] .about h3,
+[data-theme="dark"] .about p,
+[data-theme="dark"] .title_info,
+[data-theme="dark"] .title_info_one,
+[data-theme="dark"] .informationme,
+[data-theme="dark"] .informationme p,
+[data-theme="dark"] .title_proyect {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .portfolio-section p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .navbar-light .navbar-nav .nav-link {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .navbar-brand a,
+[data-theme="dark"] .navbar-brand a.text-black-50 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .project-card {
+    background-color: var(--card-bg);
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .picture {
+    border-color: rgba(56, 189, 248, 0.15);
+}
 
 ::-webkit-scrollbar {
     -webkit-appearance: none;
 }
 
 ::-webkit-scrollbar:vertical {
-    width:10px;
+    width: 10px;
 }
 
-::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
     display: none;
-} 
+}
 
 ::-webkit-scrollbar:horizontal {
     height: 15px;
@@ -22,5 +125,5 @@
 }
 
 ::-webkit-scrollbar-track {
-    border-radius: 10px;  
+    border-radius: 10px;
 }

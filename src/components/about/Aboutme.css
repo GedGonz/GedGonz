@@ -146,3 +146,32 @@ a:hover {
 .contains-aboutme{
     max-width: 1650px !important;
 }
+
+.ai-tools {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ai-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.ai-chip {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent-strong, #009cff);
+    background-color: var(--bg-alt, #f4f7fb);
+    border: 1px solid var(--border, #e6ebf1);
+    border-radius: 999px;
+    padding: 8px 18px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ai-chip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px var(--shadow, rgba(0, 0, 0, 0.15));
+}

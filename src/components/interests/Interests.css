@@ -1,0 +1,148 @@
+.interests-section {
+    padding: 60px 0 80px;
+    background-color: var(--bg);
+    transition: background-color 0.3s ease;
+}
+
+.interests-section .about h3 {
+    color: var(--text-primary);
+}
+
+.interests-intro {
+    max-width: 620px;
+    margin: 18px auto 0;
+    color: var(--text-secondary);
+}
+
+/* Hobbies */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.hobby-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+    box-shadow: 0 6px 18px var(--shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px var(--shadow);
+}
+
+.hobby-emoji {
+    font-size: 2.6rem;
+    line-height: 1;
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.hobby-title {
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hobby-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Books */
+.books-block {
+    margin-top: 48px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 6px 18px var(--shadow);
+}
+
+.books-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.books-title {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.books-header h4 {
+    color: var(--text-primary);
+    font-weight: 700;
+    margin: 0;
+}
+
+.books-count {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-strong);
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px 12px;
+}
+
+.books-link {
+    color: var(--accent-strong);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.books-link:hover {
+    color: var(--accent);
+}
+
+.books-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+}
+
+.book-item {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border);
+}
+
+.book-item .fa-book {
+    color: var(--accent-strong);
+}
+
+.book-title {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.book-author {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-left: auto;
+    white-space: nowrap;
+}

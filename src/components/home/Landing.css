@@ -68,6 +68,12 @@
     padding-top: 100px;
 }
 
+.typed-wrapper {
+    min-height: 110px;
+    display: flex;
+    align-items: flex-start;
+}
+
 
 @media (max-width: 765px) {
 
@@ -98,6 +104,11 @@
     }
     .presentation h3 {
         font-size: 18px !important;
+    }
+
+    .typed-wrapper {
+        min-height: 70px;
+        justify-content: center;
     }
 
     .container-fluid .social-links {

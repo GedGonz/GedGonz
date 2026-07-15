@@ -14,15 +14,17 @@ export default function Landing() {
                         <div className="presentation">
                             <h1 className="initial-pt-lg-20"> Gerald González Zeledón</h1>
                                 
-                            <TypewriterComponent className="typed"
-                                options={{
-                                    strings: ["Soy desarrollador de software", "Soy innovador", "Soy autodidacta", "Soy amante de la tecnología"],
-                                    autoStart: true,
-                                    loop: true,
-                                    typeSpeed: 65,
-                                    backSpeed: 65
-                                }}
-                                />
+                            <div className="typed-wrapper">
+                                <TypewriterComponent className="typed"
+                                    options={{
+                                        strings: ["Desarrollador full-stack", ".NET · Java · JavaScript", "Código limpio y buenas prácticas", "Apasionado por la tecnología"],
+                                        autoStart: true,
+                                        loop: true,
+                                        typeSpeed: 65,
+                                        backSpeed: 65
+                                    }}
+                                    />
+                            </div>
                             <div className="social-links">
                                 <ButonLink link="https://www.linkedin.com/in/gedgonz" classtype="linkedin" title="Mi linkedin" />
                                 <ButonLink link="https://www.github.com/gedgonz" classtype="github" title="Mi github" />

@@ -3,11 +3,11 @@ import React from 'react'
 export default function ButonLink(props) {
 
    function selectType(classtype){
-        if(classtype=="mail")
+        if(classtype==="mail")
             return "bx bx-mail-send";
-        if(classtype=="file")
+        if(classtype==="file")
             return "bx bxs-file-html";
-        if(classtype=="show")
+        if(classtype==="show")
             return "bx bxs-show";
         
         return "bx bxl-"+classtype;

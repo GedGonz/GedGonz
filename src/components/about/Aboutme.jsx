@@ -7,7 +7,7 @@ export default function Aboutme() {
     return (
         <section id="about" className="portfolio-section">
             <div className="container contains-aboutme">
-                <div className="row">
+                <div className="row reveal">
                     <div className="col-md-3">
                         <div className="container_image">
                             <div className="backgroundimg">
@@ -17,13 +17,15 @@ export default function Aboutme() {
                     </div>
                     <div className="col-md-9">
                         <div className="about">
-                            <h3>👋 Hola, Soy <span>Gerald González</span> </h3>
+                            <h3>👋 Hola, soy <span>Gerald González</span> </h3>
                                 <p className="text-justify">
-                                    Una persona apasionada que se esfuerza por construir y aplicar algoritmos para resolver problemas de la industria del mundo real.
+                                    Desarrollador de software apasionado por convertir problemas reales en soluciones simples y bien construidas. Disfruto entender el negocio detrás de cada proyecto para diseñar el software que de verdad lo resuelve.
                                 </p>
                                 <p className="text-justify">
-                                    Me dedico al desarrollo de software y me centro en las tecnologias de .Net, Java y Javascript. he trabajado con el Framework como Spring boot, Angular. Trabajo con tecnologias actuales y con buenas practicas de programación, patrones, arquitecturas limpia y
-                                    codigo limpio o CleanCode
+                                    Trabajo principalmente con .NET, Java y JavaScript, y con frameworks como Spring Boot y Angular. Cuido cada línea aplicando buenas prácticas, patrones de diseño, arquitectura limpia y Clean Code, buscando que lo que construyo sea legible, escalable y fácil de mantener.
+                                </p>
+                                <p className="text-justify">
+                                    Además, integro herramientas de inteligencia artificial como ChatGPT, Claude, Gemini y OpenCode en mi flujo diario para acelerar el desarrollo, explorar soluciones y aprender más rápido, siempre sin sacrificar la calidad del código.
                                 </p>
                                 <div className="row">
                                     <div className="col-lg-6">
@@ -45,7 +47,7 @@ export default function Aboutme() {
                     </div>
                 </div>
 
-                <div className="row informationme">
+                <div className="row informationme reveal">
 
                     <div className="col-md-12">
                         <div>
@@ -81,7 +83,7 @@ export default function Aboutme() {
                                 <i className="devicon-mysql-plain-wordmark "></i>
                                 <i className="devicon-redis-plain "></i>
                                 <i className="devicon-microsoftsqlserver-plain "></i>
-                                <i class="devicon-postgresql-plain"></i>
+                                <i className="devicon-postgresql-plain"></i>
                                 
                             </div>
                             <div className="col-lg-3 text-center">
@@ -97,6 +99,16 @@ export default function Aboutme() {
                                 <i className="devicon-rabbitmq-original"></i>
                             </div>
                             
+                        </div>
+
+                        <div className="ai-tools">
+                            <p className="title_info">IA & Productividad</p>
+                            <div className="ai-chips">
+                                <span className="ai-chip">ChatGPT</span>
+                                <span className="ai-chip">Claude</span>
+                                <span className="ai-chip">Gemini</span>
+                                <span className="ai-chip">OpenCode</span>
+                            </div>
                         </div>
                     </div>
                 </div>
