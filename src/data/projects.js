@@ -1,10 +1,11 @@
 const projects = [
     {
         id: "portfolio",
+        featured: true,
         titleAccent: "Port",
         titleRest: "Folio",
         description:
-            "El portafolio en el que estás ahora mismo. Una SPA construida con React 18, con arquitectura por componentes, modo claro/oscuro y diseño responsive pensado para presentar mi trabajo de forma clara.",
+            "El portafolio en el que estás ahora mismo. Una SPA construida con React 18, con arquitectura por componentes, modo claro/oscuro y diseño responsive pensado para presentar el trabajo de forma clara.",
         image:
             "https://repository-images.githubusercontent.com/417920458/9158b0b4-2b99-4a45-b7a4-0a66804486fc",
         tech: ["devicon-react-original colored"],
@@ -13,6 +14,7 @@ const projects = [
     },
     {
         id: "domusnet",
+        featured: true,
         titleAccent: "Domus",
         titleRest: "Net",
         description:
@@ -31,6 +33,7 @@ const projects = [
     },
     {
         id: "geovisor",
+        featured: true,
         titleAccent: "Geo",
         titleRest: "Visor · GIS",
         description:
@@ -49,6 +52,7 @@ const projects = [
     },
     {
         id: "tcpmqtt",
+        featured: true,
         titleAccent: "TCP",
         titleRest: " → MQTT",
         description:
@@ -64,6 +68,7 @@ const projects = [
     },
     {
         id: "mqttalarm",
+        featured: true,
         titleAccent: "MQTT",
         titleRest: " · Event & Alarm",
         description:
@@ -82,6 +87,7 @@ const projects = [
     },
     {
         id: "reports",
+        featured: true,
         titleAccent: "Reports",
         titleRest: " · Engine",
         description:
@@ -101,6 +107,7 @@ const projects = [
     },
     {
         id: "libraryepub",
+        featured: true,
         titleAccent: "Library",
         titleRest: "EPUB",
         description:
@@ -119,6 +126,7 @@ const projects = [
     },
     {
         id: "geobatch",
+        featured: true,
         titleAccent: "Geo",
         titleRest: "Batch",
         description:
@@ -135,6 +143,7 @@ const projects = [
     },
     {
         id: "bluebank",
+        featured: true,
         titleAccent: "Blue",
         titleRest: "Bank",
         description:
@@ -150,7 +159,32 @@ const projects = [
         demo: "https://gedgonz.github.io/BlueBank",
     },
     {
+        id: "notifyjenkins",
+        featured: true,
+        titleAccent: "notify",
+        titleRest: "jenkins",
+        description:
+            "Herramienta de productividad: un script en Bash que lanza notificaciones de escritorio en Linux cuando termina un job de Jenkins, indicando su nombre y estado. Si falla, incluye el enlace directo a la ejecución para depurar al instante.",
+        image: process.env.PUBLIC_URL + "/images/notifyjenkins.webp",
+        tech: ["devicon-jenkins-line colored", "devicon-bash-plain colored"],
+        repo: "https://github.com/GedGonz/notify-jenkins-jobs",
+        demo: null,
+    },
+    {
+        id: "notifyreviewer",
+        featured: true,
+        titleAccent: "notify",
+        titleRest: "reviewer",
+        description:
+            "Herramienta de productividad: un script en Bash que consulta la API de GitLab y lanza notificaciones de escritorio en Linux por cada Merge Request asignado que aún no has aprobado, con enlace directo para revisarlo al instante.",
+        image: process.env.PUBLIC_URL + "/images/notifyreviewer.webp",
+        tech: ["devicon-gitlab-plain colored", "devicon-bash-plain colored"],
+        repo: "https://github.com/GedGonz/notify-reviewer",
+        demo: null,
+    },
+    {
         id: "funkopop",
+        featured: false,
         titleAccent: "Funko",
         titleRest: "Pop",
         description:
@@ -167,6 +201,7 @@ const projects = [
     },
     {
         id: "rickandmorty",
+        featured: false,
         titleAccent: "Rick",
         titleRest: "&Morty",
         description:
@@ -182,6 +217,7 @@ const projects = [
     },
     {
         id: "blogjs",
+        featured: false,
         titleAccent: "Blog",
         titleRest: "JS",
         description:
@@ -198,6 +234,7 @@ const projects = [
     },
     {
         id: "githubapi",
+        featured: false,
         titleAccent: "Github",
         titleRest: "API",
         description:
@@ -214,6 +251,7 @@ const projects = [
     },
     {
         id: "reactmovies",
+        featured: false,
         titleAccent: "React",
         titleRest: " Movies",
         description:
@@ -223,28 +261,6 @@ const projects = [
         tech: ["devicon-react-original colored"],
         repo: "https://github.com/GedGonz/reactMovie",
         demo: "https://gedgonz.github.io/reactMovie/",
-    },
-    {
-        id: "notifyjenkins",
-        titleAccent: "notify",
-        titleRest: "jenkins",
-        description:
-            "Herramienta de productividad: un script en Bash que lanza notificaciones de escritorio en Linux cuando termina un job de Jenkins, indicando su nombre y estado. Si falla, incluye el enlace directo a la ejecución para depurar al instante.",
-        image: process.env.PUBLIC_URL + "/images/notifyjenkins.webp",
-        tech: ["devicon-jenkins-line colored", "devicon-bash-plain colored"],
-        repo: "https://github.com/GedGonz/notify-jenkins-jobs",
-        demo: null,
-    },
-    {
-        id: "notifyreviewer",
-        titleAccent: "notify",
-        titleRest: "reviewer",
-        description:
-            "Herramienta de productividad: un script en Bash que consulta la API de GitLab y lanza notificaciones de escritorio en Linux por cada Merge Request asignado que aún no has aprobado, con enlace directo para revisarlo al instante.",
-        image: process.env.PUBLIC_URL + "/images/notifyreviewer.webp",
-        tech: ["devicon-gitlab-plain colored", "devicon-bash-plain colored"],
-        repo: "https://github.com/GedGonz/notify-reviewer",
-        demo: null,
     },
 ];
 

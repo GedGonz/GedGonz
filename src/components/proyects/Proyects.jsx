@@ -3,7 +3,7 @@ import TypewriterComponent from 'typewriter-effect';
 import projects from '../../data/projects';
 import "./Proyects.css";
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, animate = true }) {
     const [expanded, setExpanded] = useState(false);
     const [isOverflowing, setIsOverflowing] = useState(false);
     const descriptionRef = useRef(null);
@@ -26,7 +26,7 @@ function ProjectCard({ project }) {
     }, [expanded, project.description]);
 
     return (
-        <article className="project-card reveal">
+        <article className={`project-card${animate ? ' reveal' : ''}`}>
             <div className="project-image">
                 <img
                     className="picture_proyect"
@@ -95,7 +95,12 @@ function ProjectCard({ project }) {
     );
 }
 
+const featuredProjects = projects.filter((p) => p.featured !== false);
+const otherProjects = projects.filter((p) => p.featured === false);
+
 export default function Proyects() {
+    const [showOthers, setShowOthers] = useState(false);
+
     return (
         <section id="proyects">
             <div className="container">
@@ -105,10 +110,31 @@ export default function Proyects() {
                 </div>
 
                 <div className="projects-grid">
-                    {projects.map((project) => (
+                    {featuredProjects.map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
+
+                {otherProjects.length > 0 && (
+                    <div className="other-projects">
+                        <button
+                            type="button"
+                            className="other-projects-toggle"
+                            onClick={() => setShowOthers((prev) => !prev)}
+                            aria-expanded={showOthers}
+                        >
+                            {showOthers ? 'Ocultar otros proyectos' : 'Ver otros proyectos'}
+                            <i className={`fa fa-chevron-${showOthers ? 'up' : 'down'}`}></i>
+                        </button>
+                        {showOthers && (
+                            <div className="projects-grid other-projects-grid">
+                                {otherProjects.map((project) => (
+                                    <ProjectCard key={project.id} project={project} animate={false} />
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                )}
             </div>
 
             <div className="message">

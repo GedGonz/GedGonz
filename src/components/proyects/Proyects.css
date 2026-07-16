@@ -163,6 +163,39 @@
     transform: translateY(-3px);
 }
 
+.other-projects {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.other-projects-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.65rem 1.4rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--card-bg);
+    color: var(--text-primary);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.other-projects-toggle:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.other-projects-toggle i {
+    font-size: 12px;
+}
+
+.other-projects-grid {
+    margin-top: 2rem;
+}
+
 .message {
     color: var(--text-secondary);
     font-family: 'Rubik', sans-serif !important;
