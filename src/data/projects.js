@@ -12,6 +12,128 @@ const projects = [
         demo: "https://gedgonz.github.io/GedGonz",
     },
     {
+        id: "domusnet",
+        titleAccent: "Domus",
+        titleRest: "Net",
+        description:
+            "Sistema web para la gestión de comunidades residenciales: administración de viviendas y residentes, comprobantes de pago y generación automática de cuentas por cobrar mediante cron. Backend en Spring Boot (Java 17) con arquitectura hexagonal, JWT y Cloudinary; frontend en Angular 20 + TailwindCSS sobre PostgreSQL.",
+        image:
+            "https://raw.githubusercontent.com/GedGonz/DomusNet/main/screenshots/01-login-page.png",
+        tech: [
+            "devicon-angularjs-plain colored",
+            "devicon-tailwindcss-plain colored",
+            "devicon-spring-plain colored",
+            "devicon-java-plain colored",
+            "devicon-postgresql-plain colored",
+        ],
+        repo: "https://github.com/GedGonz/DomusNet",
+        demo: null,
+    },
+    {
+        id: "geovisor",
+        titleAccent: "Geo",
+        titleRest: "Visor · GIS",
+        description:
+            "Geovisor GIS full-stack para la gestión de mantenimiento de vegetación bajo redes eléctricas (tala y poda): carga de archivos KMZ con la geometría de la red, extracción de vanos y apoyos, y proyección de las zonas de poda sobre un mapa interactivo. Frontend en Angular + TypeScript con OpenLayers; backend en .NET Core con Entity Framework Core sobre PostgreSQL. En el backend se refactorizó la importación de KMZ aplicando el patrón Strategy para soportar múltiples tipos de geometría de forma extensible (vanos, apoyos y otros objetos), se paralelizó el procesado para acelerar la carga y se generó exportación dinámica de CSV. En el frontend se integró el inicio de sesión con Azure AD (MSAL) con manejo de refresh token, y se implementó un theming dinámico multiempresa que adapta colores y marca según la compañía autenticada.",
+        image: process.env.PUBLIC_URL + "/images/geovisor.webp",
+        tech: [
+            "devicon-angularjs-plain colored",
+            "devicon-typescript-original colored",
+            "devicon-dotnetcore-plain colored",
+            "devicon-postgresql-plain colored",
+            "devicon-azure-plain colored",
+        ],
+        repo: null,
+        demo: null,
+        note: "Proyecto profesional · código privado",
+    },
+    {
+        id: "tcpmqtt",
+        titleAccent: "TCP",
+        titleRest: " → MQTT",
+        description:
+            "Servicio backend en Python que actúa de puente entre dispositivos industriales IoT (protocolo binario sobre TCP) y un ecosistema de mensajería MQTT. Se diseñó el reensamblado de tramas de un stream TCP (fragmentadas o concatenadas), un modelo de concurrencia de un hilo por conexión con una cola desacoplada de un único consumidor para publicar sin bloqueos, validación de dispositivos, cifrado del payload y endpoints de salud y métricas estilo Prometheus. Contenerizado con Docker.",
+        image: process.env.PUBLIC_URL + "/images/tcpmqtt.webp",
+        tech: [
+            "devicon-python-plain colored",
+            "devicon-docker-plain colored",
+        ],
+        repo: null,
+        demo: null,
+        note: "Proyecto profesional · código privado",
+    },
+    {
+        id: "mqttalarm",
+        titleAccent: "MQTT",
+        titleRest: " · Event & Alarm",
+        description:
+            "Microservicio backend (Spring Boot, Java 17) que consume los eventos MQTT de paneles industriales IoT, los normaliza, persiste en PostgreSQL y dispara notificaciones multicanal y alarmas predictivas. Se extrajo de un backend monolítico a un servicio independiente, montando su infraestructura (Docker + CI en Jenkins). Se refactorizó el procesamiento de entradas digitales aplicando Strategy/Composite y Builder (extensible sin tocar el orquestador) y se desarrolló la lógica de alarmas y su despacho por push, email, SMS y llamada. Incluye procesamiento desacoplado por cola con backpressure, envío de notificaciones solo tras el commit en BD, idempotencia de eventos, reintentos ante deadlocks y monitoreo operativo.",
+        image: process.env.PUBLIC_URL + "/images/mqttalarm.webp",
+        tech: [
+            "devicon-java-plain colored",
+            "devicon-spring-plain colored",
+            "devicon-postgresql-plain colored",
+            "devicon-docker-plain colored",
+            "devicon-jenkins-line colored",
+        ],
+        repo: null,
+        demo: null,
+        note: "Proyecto profesional · código privado",
+    },
+    {
+        id: "reports",
+        titleAccent: "Reports",
+        titleRest: " · Engine",
+        description:
+            "Microservicio backend (Spring Boot, Java 17) para la generación y envío de reportes empresariales en PDF, Excel y Word. Se diseñó y montó toda su infraestructura de despliegue: se contenerizó el servicio con Docker (build multi-stage) y se configuraron desde cero los pipelines de CI/CD en Jenkins para los entornos de desarrollo y producción. Se extrajo de un backend monolítico a un servicio independiente y se aplicó el patrón Strategy para soportar dos motores de render intercambiables —BIRT y HTML dinámico a PDF con Chromium headless (Playwright)— seleccionables en tiempo de ejecución. Se actualizó el motor de reportes y se integró la generación asíncrona por colas y el envío por correo con plantillas. Se expone de forma transparente al frontend mediante un reverse proxy Nginx sobre la misma URL del backend.",
+        image: process.env.PUBLIC_URL + "/images/reports.webp",
+        tech: [
+            "devicon-java-plain colored",
+            "devicon-spring-plain colored",
+            "devicon-postgresql-plain colored",
+            "devicon-docker-plain colored",
+            "devicon-jenkins-line colored",
+            "devicon-nginx-original colored",
+        ],
+        repo: null,
+        demo: null,
+        note: "Proyecto profesional · código privado",
+    },
+    {
+        id: "libraryepub",
+        titleAccent: "Library",
+        titleRest: "EPUB",
+        description:
+            "Aplicación full-stack para explorar una biblioteca digital de libros EPUB: catálogo con portadas, filtros A-Z, favoritos y un visor EPUB embebido. Backend en Spring Boot (Java 17) con PostgreSQL y frontend en Angular, todo desplegable con Docker Compose.",
+        image:
+            "https://raw.githubusercontent.com/GedGonz/libraryEpub/main/docs/screenshots/home-books.png",
+        tech: [
+            "devicon-angularjs-plain colored",
+            "devicon-spring-plain colored",
+            "devicon-java-plain colored",
+            "devicon-postgresql-plain colored",
+            "devicon-docker-plain colored",
+        ],
+        repo: "https://github.com/GedGonz/libraryEpub",
+        demo: null,
+    },
+    {
+        id: "geobatch",
+        titleAccent: "Geo",
+        titleRest: "Batch",
+        description:
+            "Procesamiento masivo de datos geoespaciales con Spring Batch: carga y gestiona información de apoyos junto a sus coordenadas geográficas. Aprovecha PostGIS e Hibernate Spatial sobre PostgreSQL para el manejo eficiente de datos espaciales.",
+        image: process.env.PUBLIC_URL + "/images/geobatch.webp",
+        tech: [
+            "devicon-java-plain colored",
+            "devicon-spring-plain colored",
+            "devicon-postgresql-plain colored",
+            "devicon-gradle-plain colored",
+        ],
+        repo: "https://github.com/GedGonz/GeoBatch",
+        demo: null,
+    },
+    {
         id: "bluebank",
         titleAccent: "Blue",
         titleRest: "Bank",
@@ -108,10 +230,20 @@ const projects = [
         titleRest: "jenkins",
         description:
             "Herramienta de productividad: un script en Bash que lanza notificaciones de escritorio en Linux cuando termina un job de Jenkins, indicando su nombre y estado. Si falla, incluye el enlace directo a la ejecución para depurar al instante.",
-        image:
-            "https://repository-images.githubusercontent.com/883284499/12e5eba2-3904-46c7-a4c6-07e43a777292",
+        image: process.env.PUBLIC_URL + "/images/notifyjenkins.webp",
         tech: ["devicon-jenkins-line colored", "devicon-bash-plain colored"],
         repo: "https://github.com/GedGonz/notify-jenkins-jobs",
+        demo: null,
+    },
+    {
+        id: "notifyreviewer",
+        titleAccent: "notify",
+        titleRest: "reviewer",
+        description:
+            "Herramienta de productividad: un script en Bash que consulta la API de GitLab y lanza notificaciones de escritorio en Linux por cada Merge Request asignado que aún no has aprobado, con enlace directo para revisarlo al instante.",
+        image: process.env.PUBLIC_URL + "/images/notifyreviewer.webp",
+        tech: ["devicon-gitlab-plain colored", "devicon-bash-plain colored"],
+        repo: "https://github.com/GedGonz/notify-reviewer",
         demo: null,
     },
 ];

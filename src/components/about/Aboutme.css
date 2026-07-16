@@ -32,6 +32,10 @@
         font-size: 50px;
         padding: 80px !important;
     }
+    .informationme .tech-svg {
+        height: 50px;
+        padding: 80px !important;
+    }
 
     .picture {
         width: 80% !important;
@@ -59,6 +63,9 @@
 
 @media screen and (min-width: 320px) and (max-width:480px) {
     .informationme i {
+        padding: 20px !important;
+    }
+    .informationme .tech-svg {
         padding: 20px !important;
     }
 }
@@ -101,6 +108,19 @@ a:hover {
     font-size: 35px;
     padding: 5px;
     display: inline-block;
+}
+
+.informationme .tech-svg {
+    height: 35px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.75;
+}
+
+[data-theme="dark"] .informationme .tech-svg {
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
 }
 
 .informationme .list-data {

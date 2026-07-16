@@ -61,6 +61,8 @@ export default function Aboutme() {
                                 <i className="devicon-java-plain-wordmark "></i>
                                 <i className="devicon-typescript-original "></i>
                                 <i className="devicon-javascript-plain "></i>
+                                <i className="devicon-python-plain "></i>
+                                <i className="devicon-bash-plain "></i>
                             </div>
 
                             <div className="col-lg-3 text-center">
@@ -84,6 +86,8 @@ export default function Aboutme() {
                                 <i className="devicon-redis-plain "></i>
                                 <i className="devicon-microsoftsqlserver-plain "></i>
                                 <i className="devicon-postgresql-plain"></i>
+                                <i className="devicon-rabbitmq-original"></i>
+                                <img className="tech-svg" src={process.env.PUBLIC_URL + '/images/kafka.svg'} alt="Apache Kafka" />
                                 
                             </div>
                             <div className="col-lg-3 text-center">
@@ -96,7 +100,7 @@ export default function Aboutme() {
                                 <i className="devicon-docker-plain "></i>
                                 <i className="devicon-linux-plain"></i>
                                 <i className="devicon-nginx-original"></i>
-                                <i className="devicon-rabbitmq-original"></i>
+                                <i className="devicon-gradle-plain "></i>
                             </div>
                             
                         </div>
