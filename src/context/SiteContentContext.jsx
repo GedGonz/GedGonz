@@ -26,6 +26,65 @@ function normalizeContent(raw) {
     };
 }
 
+function resolveGistId(contentUrl) {
+    const patterns = [
+        /api\.github\.com\/gists\/([a-f0-9]+)/i,
+        /gist\.githubusercontent\.com\/[^/]+\/([a-f0-9]+)/i,
+        /gist\.github\.com\/[^/]+\/([a-f0-9]+)/i,
+    ];
+    for (const pattern of patterns) {
+        const match = contentUrl.match(pattern);
+        if (match) return match[1];
+    }
+    return null;
+}
+
+async function fetchRemoteContent(contentUrl, signal) {
+    const gistId = resolveGistId(contentUrl);
+
+    // API evita el CDN raw (max-age 300). ?_= fuerza miss de caché en cada reload.
+    if (gistId) {
+        const apiUrl = `https://api.github.com/gists/${gistId}?_=${Date.now()}`;
+        const response = await fetch(apiUrl, {
+            signal,
+            cache: "no-store",
+            headers: { Accept: "application/vnd.github+json" },
+        });
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+        const gist = await response.json();
+        const file =
+            gist.files?.["site.json"] ||
+            Object.values(gist.files || {}).find((f) =>
+                f.filename?.endsWith(".json")
+            );
+        if (!file) {
+            throw new Error("No site.json in gist");
+        }
+        if (file.truncated && file.raw_url) {
+            const rawRes = await fetch(
+                `${file.raw_url}${file.raw_url.includes("?") ? "&" : "?"}_=${Date.now()}`,
+                { signal, cache: "no-store" }
+            );
+            if (!rawRes.ok) {
+                throw new Error(`HTTP ${rawRes.status}`);
+            }
+            return rawRes.json();
+        }
+        return JSON.parse(file.content);
+    }
+
+    const url = contentUrl.includes("?")
+        ? `${contentUrl}&_=${Date.now()}`
+        : `${contentUrl}?_=${Date.now()}`;
+    const response = await fetch(url, { signal, cache: "no-store" });
+    if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+    }
+    return response.json();
+}
+
 export function SiteContentProvider({ children }) {
     const [content, setContent] = useState(localSiteContent);
     const [source, setSource] = useState("local");
@@ -44,23 +103,19 @@ export function SiteContentProvider({ children }) {
 
         (async () => {
             try {
-                const url = CONTENT_URL.includes("?")
-                    ? `${CONTENT_URL}&_=${Date.now()}`
-                    : `${CONTENT_URL}?_=${Date.now()}`;
-                const response = await fetch(url, {
-                    signal: controller.signal,
-                    cache: "no-store",
-                });
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-                const json = await response.json();
+                const json = await fetchRemoteContent(
+                    CONTENT_URL,
+                    controller.signal
+                );
                 if (cancelled) return;
                 setContent(normalizeContent(json));
                 setSource("remote");
             } catch (error) {
                 if (cancelled || error.name === "AbortError") return;
-                console.warn("[SiteContent] Gist fetch failed, using local:", error);
+                console.warn(
+                    "[SiteContent] Gist fetch failed, using local:",
+                    error
+                );
                 setContent(localSiteContent);
                 setSource("local");
             } finally {

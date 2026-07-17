@@ -1,4 +1,4 @@
-// URL raw del Gist con site.json (sin deploy al editar contenido).
-// Ejemplo: https://gist.githubusercontent.com/USER/GIST_ID/raw/site.json
-// Configura en .env: REACT_APP_CONTENT_URL=...
+// URL del Gist (raw o gist.github.com). El fetch usa la API de GitHub
+// para evitar la caché CDN del raw (~5 min). Configura en .env:
+// REACT_APP_CONTENT_URL=https://gist.githubusercontent.com/USER/GIST_ID/raw/site.json
 export const CONTENT_URL = (process.env.REACT_APP_CONTENT_URL || "").trim();
