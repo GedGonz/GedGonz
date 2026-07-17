@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/GedGonz/static/css/main.ca7523a5.css",
-    "main.js": "/GedGonz/static/js/main.b8f3ac95.js",
+    "main.js": "/GedGonz/static/js/main.1875287e.js",
     "index.html": "/GedGonz/index.html",
     "main.ca7523a5.css.map": "/GedGonz/static/css/main.ca7523a5.css.map",
-    "main.b8f3ac95.js.map": "/GedGonz/static/js/main.b8f3ac95.js.map"
+    "main.1875287e.js.map": "/GedGonz/static/js/main.1875287e.js.map"
   },
   "entrypoints": [
     "static/css/main.ca7523a5.css",
-    "static/js/main.b8f3ac95.js"
+    "static/js/main.1875287e.js"
   ]
 }
