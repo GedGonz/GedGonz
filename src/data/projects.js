@@ -1,18 +1,5 @@
 const projects = [
     {
-        id: "portfolio",
-        featured: true,
-        titleAccent: "Port",
-        titleRest: "Folio",
-        description:
-            "El portafolio en el que estás ahora mismo. Una SPA construida con React 18, con arquitectura por componentes, modo claro/oscuro y diseño responsive pensado para presentar el trabajo de forma clara.",
-        image:
-            "https://repository-images.githubusercontent.com/417920458/9158b0b4-2b99-4a45-b7a4-0a66804486fc",
-        tech: ["devicon-react-original colored"],
-        repo: "https://github.com/GedGonz/GedGonz",
-        demo: "https://gedgonz.github.io/GedGonz",
-    },
-    {
         id: "domusnet",
         featured: true,
         titleAccent: "Domus",
@@ -106,25 +93,6 @@ const projects = [
         note: "Proyecto profesional · código privado",
     },
     {
-        id: "libraryepub",
-        featured: true,
-        titleAccent: "Library",
-        titleRest: "EPUB",
-        description:
-            "Aplicación full-stack para explorar una biblioteca digital de libros EPUB: catálogo con portadas, filtros A-Z, favoritos y un visor EPUB embebido. Backend en Spring Boot (Java 17) con PostgreSQL y frontend en Angular, todo desplegable con Docker Compose.",
-        image:
-            "https://raw.githubusercontent.com/GedGonz/libraryEpub/main/docs/screenshots/home-books.png",
-        tech: [
-            "devicon-angularjs-plain colored",
-            "devicon-spring-plain colored",
-            "devicon-java-plain colored",
-            "devicon-postgresql-plain colored",
-            "devicon-docker-plain colored",
-        ],
-        repo: "https://github.com/GedGonz/libraryEpub",
-        demo: null,
-    },
-    {
         id: "geobatch",
         featured: true,
         titleAccent: "Geo",
@@ -142,8 +110,40 @@ const projects = [
         demo: null,
     },
     {
+        id: "portfolio",
+        featured: false,
+        titleAccent: "Port",
+        titleRest: "Folio",
+        description:
+            "El portafolio en el que estás ahora mismo. Una SPA construida con React 18, con arquitectura por componentes, modo claro/oscuro y diseño responsive pensado para presentar el trabajo de forma clara.",
+        image:
+            "https://repository-images.githubusercontent.com/417920458/9158b0b4-2b99-4a45-b7a4-0a66804486fc",
+        tech: ["devicon-react-original colored"],
+        repo: "https://github.com/GedGonz/GedGonz",
+        demo: "https://gedgonz.github.io/GedGonz",
+    },
+    {
+        id: "libraryepub",
+        featured: false,
+        titleAccent: "Library",
+        titleRest: "EPUB",
+        description:
+            "Aplicación full-stack para explorar una biblioteca digital de libros EPUB: catálogo con portadas, filtros A-Z, favoritos y un visor EPUB embebido. Backend en Spring Boot (Java 17) con PostgreSQL y frontend en Angular, todo desplegable con Docker Compose.",
+        image:
+            "https://raw.githubusercontent.com/GedGonz/libraryEpub/main/docs/screenshots/home-books.png",
+        tech: [
+            "devicon-angularjs-plain colored",
+            "devicon-spring-plain colored",
+            "devicon-java-plain colored",
+            "devicon-postgresql-plain colored",
+            "devicon-docker-plain colored",
+        ],
+        repo: "https://github.com/GedGonz/libraryEpub",
+        demo: null,
+    },
+    {
         id: "bluebank",
-        featured: true,
+        featured: false,
         titleAccent: "Blue",
         titleRest: "Bank",
         description:
@@ -160,7 +160,7 @@ const projects = [
     },
     {
         id: "notifyjenkins",
-        featured: true,
+        featured: false,
         titleAccent: "notify",
         titleRest: "jenkins",
         description:
@@ -172,7 +172,7 @@ const projects = [
     },
     {
         id: "notifyreviewer",
-        featured: true,
+        featured: false,
         titleAccent: "notify",
         titleRest: "reviewer",
         description:

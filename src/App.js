@@ -1,27 +1,33 @@
-import Landing from "./components/home/Landing";
-import Menu from "./components/nav/Menu";
-import Aboutme from "./components/about/Aboutme";
-import Proyects from "./components/proyects/Proyects";
-import Interests from "./components/interests/Interests";
-import Footer from "./components/footer/Footer";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import CvPage from "./components/cv/CvPage";
 import useTheme from "./hooks/useTheme";
-import useScrollReveal from "./hooks/useScrollReveal";
-import './App.css';
+import { SiteContentProvider } from "./context/SiteContentContext";
+import "./App.css";
 
 function App() {
-  const { theme, toggleTheme } = useTheme();
-  useScrollReveal();
+    const { theme, toggleTheme } = useTheme();
 
-  return (
-    <div className="App">
-      <Menu theme={theme} toggleTheme={toggleTheme} />
-      <Landing />
-      <Aboutme />
-      <Proyects />
-      <Interests />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <SiteContentProvider>
+                <HashRouter>
+                    <Routes>
+                        <Route
+                            path="/"
+                            element={
+                                <HomePage
+                                    theme={theme}
+                                    toggleTheme={toggleTheme}
+                                />
+                            }
+                        />
+                        <Route path="/cv" element={<CvPage />} />
+                    </Routes>
+                </HashRouter>
+            </SiteContentProvider>
+        </div>
+    );
 }
 
 export default App;

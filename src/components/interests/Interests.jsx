@@ -34,7 +34,7 @@ export default function Interests() {
             <div className="books-title">
               <h4>Algunas lecturas</h4>
               <span className="books-count">
-                {booksReadCount} libros leídos
+                {booksReadCount} libros leídos y contando
               </span>
             </div>
             <a

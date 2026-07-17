@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "profile": {
+    "name": "Gerald González Zeledón",
+    "shortName": "Gerald González",
+    "brand": "GedGonz",
+    "title": "Desarrollador Backend / Full-Stack",
+    "footerTagline": "Desarrollador de software",
+    "pdfFilename": "Gerald_Gonzalez_Zeledon_CV.pdf",
+    "summaries": {
+      "cv": "Ingeniero de software backend / full-stack (.NET, Java/Spring Boot, Angular) con +10 años en sistemas de negocio en producción: finanzas y monitoreo distribuido (Kafka, Redis, AWS), plataformas geoespaciales (GeoServer, Oracle/PostgreSQL), academia/contabilidad y administración tributaria. Diseño APIs, mensajería e integraciones cloud; priorizo arquitectura limpia, pruebas y autenticación empresarial (JWT, Azure AD).",
+      "about": [
+        "Desarrollador backend / full-stack con foco en Java (Spring Boot), .NET y Angular. Trabajo en sistemas con impacto operativo: IoT y mensajería (MQTT), geovisores GIS y plataformas de gestión de comunidades.",
+        "Priorizo arquitectura clara (hexagonal / clean architecture), autenticación empresarial (JWT, Azure AD) y código mantenible —no por eslogan, sino porque esos sistemas viven en producción.",
+        "Uso IA (ChatGPT, Claude, Gemini, OpenCode) como apoyo en el día a día para ir más rápido sin bajar el listón de calidad."
+      ]
+    },
+    "typewriter": [
+      "Backend / Full-Stack",
+      "Java · .NET · Angular",
+      "IoT · MQTT · GIS",
+      "Arquitectura limpia en producción"
+    ],
+    "contact": {
+      "email": "gedgonz7@gmail.com",
+      "phone": "+505 5702-8362",
+      "location": "Masaya, Nicaragua",
+      "linkedin": "https://www.linkedin.com/in/gedgonz",
+      "linkedinLabel": "linkedin.com/in/gedgonz",
+      "github": "https://github.com/GedGonz",
+      "githubLabel": "github.com/GedGonz",
+      "portfolio": "https://gedgonz.github.io/GedGonz",
+      "portfolioLabel": "gedgonz.github.io/GedGonz",
+      "blog": "https://dev.to/gedgonz"
+    },
+    "skills": {
+      "languages": [
+        "C#",
+        "Java",
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "Bash",
+        "SQL"
+      ],
+      "backend": [
+        "Spring Boot",
+        "ASP.NET Core",
+        ".NET",
+        "Node.js",
+        "Kafka",
+        "RabbitMQ",
+        "MQTT",
+        "Redis"
+      ],
+      "frontend": [
+        "Angular",
+        "React",
+        "HTML5",
+        "CSS3",
+        "TypeScript"
+      ],
+      "data": [
+        "PostgreSQL",
+        "SQL Server",
+        "Oracle",
+        "MySQL",
+        "MongoDB",
+        "Geoespacial"
+      ],
+      "tools": [
+        "Docker",
+        "Jenkins",
+        "Git",
+        "AWS (SQS, S3, EC2)",
+        "Azure AD / MSAL",
+        "Nginx",
+        "Linux",
+        "GeoServer"
+      ],
+      "practices": [
+        "Clean Architecture",
+        "DDD",
+        "SOLID",
+        "Patrones de diseño",
+        "Pruebas unitarias"
+      ]
+    },
+    "techIcons": {
+      "languages": [
+        "devicon-csharp-plain-wordmark",
+        "devicon-java-plain-wordmark",
+        "devicon-typescript-original",
+        "devicon-javascript-plain",
+        "devicon-python-plain",
+        "devicon-bash-plain"
+      ],
+      "frontend": [
+        "devicon-angularjs-plain",
+        "devicon-bootstrap-plain",
+        "devicon-html5-plain-wordmark",
+        "devicon-css3-plain-wordmark"
+      ],
+      "backend": [
+        "devicon-spring-original",
+        "devicon-nodejs-plain",
+        "devicon-express-original",
+        "devicon-dotnetcore-plain",
+        "devicon-mongodb-plain-wordmark",
+        "devicon-mysql-plain-wordmark",
+        "devicon-redis-plain",
+        "devicon-microsoftsqlserver-plain",
+        "devicon-postgresql-plain",
+        "devicon-rabbitmq-original"
+      ],
+      "tools": [
+        "devicon-jenkins-line",
+        "devicon-git-plain",
+        "devicon-visualstudio-plain",
+        "devicon-github-plain",
+        "devicon-gitlab-plain",
+        "devicon-docker-plain",
+        "devicon-linux-plain",
+        "devicon-nginx-original",
+        "devicon-gradle-plain"
+      ],
+      "backendExtraSvg": [
+        {
+          "src": "/images/kafka.svg",
+          "alt": "Apache Kafka"
+        }
+      ]
+    },
+    "aiTools": [
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "OpenCode"
+    ]
+  },
+  "experience": [
+    {
+      "id": "kadree",
+      "role": "Ingeniero Senior",
+      "company": "Kadree Tech",
+      "location": "Colombia (remoto)",
+      "period": "Abril 2021 – Presente",
+      "bullets": [
+        "Desarrollo de sistemas financieros y de monitoreo con .NET Core, Spring Boot, Angular, Kafka, Redis y Docker.",
+        "Implementación de arquitectura limpia orientada a DDD, pruebas unitarias e integración con AWS (SQS, S3, EC2).",
+        "Lenguajes principales: C#, Java, TypeScript y JavaScript."
+      ]
+    },
+    {
+      "id": "factech",
+      "role": "Desarrollador Full Stack",
+      "company": "Factech Servicios Informáticos",
+      "location": "España (remoto)",
+      "period": "Febrero 2024 – Enero 2025",
+      "bullets": [
+        "Mantenimiento y evolución de sistemas geoespaciales existentes.",
+        "Desarrollo de Web APIs, consolas y frontends Angular con GeoServer.",
+        "Bases de datos Oracle, PostgreSQL y datos geoespaciales."
+      ]
+    },
+    {
+      "id": "hublance",
+      "role": "Consultant .NET Developer",
+      "company": "Hublance",
+      "location": "España (remoto)",
+      "period": "Marzo 2022 – Febrero 2024",
+      "bullets": [
+        "Mantenimiento de sistemas geoespaciales y desarrollo de Web APIs y consolas.",
+        "Integración frontend Angular y servicios geoespaciales (GeoServer).",
+        "Trabajo con Oracle, PostgreSQL y bases de datos geoespaciales."
+      ]
+    },
+    {
+      "id": "innovasoft",
+      "role": "Desarrollador de Software",
+      "company": "InnovaSoft Class",
+      "location": "Costa Rica (remoto)",
+      "period": "Febrero 2020 – Abril 2021",
+      "bullets": [
+        "Mantenimiento de sistemas académicos y contables.",
+        "Desarrollo con .NET, WCF, C#, VB, JavaScript, CSS, jQuery y Reporting Services.",
+        "Transact-SQL, manuales de usuario/pruebas y atención de bitácoras."
+      ]
+    },
+    {
+      "id": "dgi",
+      "role": "Analista de Sistemas",
+      "company": "Dirección General de Ingresos (DGI)",
+      "location": "Nicaragua",
+      "period": "Diciembre 2014 – Febrero 2020",
+      "bullets": [
+        "Mantenimiento de sistemas tributarios, administrativos, de riesgos y de gestiones.",
+        "Desarrollo en C#, PHP, .NET, WCF y .NET Core (sistemas y consolas)."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "master",
+      "degree": "Maestría en Informática Empresarial",
+      "school": "Universidad Nacional de Ingeniería",
+      "period": "2017 – 2019"
+    },
+    {
+      "id": "postgrad",
+      "degree": "Posgrado: Experto en Desarrollo en .NET",
+      "school": "Universidad Nacional de Ingeniería",
+      "period": "2015"
+    },
+    {
+      "id": "bachelor",
+      "degree": "Ingeniero de Sistemas",
+      "school": "Universidad Nacional de Ingeniería",
+      "period": "2010 – 2015"
+    }
+  ],
+  "otherEducation": [
+    {
+      "id": "mvc",
+      "title": "Desarrollo MVC con .NET Core",
+      "school": "Tecnasa",
+      "period": "2019"
+    },
+    {
+      "id": "web",
+      "title": "Desarrollo Web con HTML5, CSS3 y JavaScript",
+      "school": "Tecnasa",
+      "period": "2019"
+    },
+    {
+      "id": "android",
+      "title": "Desarrollo de Aplicaciones Android",
+      "school": "New Horizons",
+      "period": "2017"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import "./Menu.css";
 
 
@@ -51,7 +52,9 @@ export default function Menu({ theme, toggleTheme }) {
                             </Link> 
                         </li>
                         <li className="nav-item px-2">
-                        <a className="nav-link" href="https://gedgonz.github.io/CV/files/CurriculumVitae.pdf">CV </a>
+                            <RouterLink className="nav-link" to="/cv">
+                                CV
+                            </RouterLink>
                         </li>
                         <li className="nav-item px-2">
                             <button
