@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
+import { useSiteContent } from "../../context/SiteContentContext";
 import "./Menu.css";
 
 
 
 export default function Menu({ theme, toggleTheme }) {
+    const { profile } = useSiteContent();
+    const brand = profile?.brand || "GedGonz";
 
     var [getToggle, setToggle] = useState(false);
 
@@ -22,7 +25,7 @@ export default function Menu({ theme, toggleTheme }) {
 
                     <div className="navbar-brand">
                         <Link activeClass="active" className="text-black-50" to="inicio" spy={true} smooth={true} duration={800} >
-                            GedGonz
+                            {brand}
                         </Link> 
                     </div>
                     <button onClick={ toggleMenu } className="navbar-toggler" type="button" data-toggle="collapse" >

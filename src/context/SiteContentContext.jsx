@@ -44,7 +44,10 @@ export function SiteContentProvider({ children }) {
 
         (async () => {
             try {
-                const response = await fetch(CONTENT_URL, {
+                const url = CONTENT_URL.includes("?")
+                    ? `${CONTENT_URL}&_=${Date.now()}`
+                    : `${CONTENT_URL}?_=${Date.now()}`;
+                const response = await fetch(url, {
                     signal: controller.signal,
                     cache: "no-store",
                 });
@@ -57,6 +60,7 @@ export function SiteContentProvider({ children }) {
                 setSource("remote");
             } catch (error) {
                 if (cancelled || error.name === "AbortError") return;
+                console.warn("[SiteContent] Gist fetch failed, using local:", error);
                 setContent(localSiteContent);
                 setSource("local");
             } finally {
