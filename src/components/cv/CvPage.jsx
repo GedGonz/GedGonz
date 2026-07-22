@@ -1,15 +1,66 @@
 import React, { useCallback, useState } from "react";
 import { Link } from "react-router-dom";
 import html2pdf from "html2pdf.js";
+import { trackEvent } from "../../analytics/goatcounter";
 import { useSiteContent } from "../../context/SiteContentContext";
 import "./CvPage.css";
+
+const CV_KEYWORDS = [
+    "Java/Spring Boot",
+    "Oracle/PostgreSQL",
+    "arquitectura limpia",
+    "Spring Boot",
+    ".NET Core",
+    "TypeScript",
+    "JavaScript",
+    "PostgreSQL",
+    "Azure AD",
+    "GeoServer",
+    "Web APIs",
+    "full-stack",
+    "backend",
+    "Angular",
+    "Docker",
+    "Oracle",
+    ".NET",
+    "Kafka",
+    "Redis",
+    "AWS",
+    "DDD",
+    "JWT",
+    "APIs",
+    "Java",
+    "C#",
+];
+
+function emphasizeKeywords(text) {
+    if (!text) return text;
+    const pattern = new RegExp(
+        `(${CV_KEYWORDS.map((k) =>
+            k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+        ).join("|")})`,
+        "gi"
+    );
+    const parts = text.split(pattern);
+    return parts.map((part, index) =>
+        CV_KEYWORDS.some((k) => k.toLowerCase() === part.toLowerCase()) ? (
+            <strong key={`${part}-${index}`} className="cv-kw">
+                {part}
+            </strong>
+        ) : (
+            part
+        )
+    );
+}
 
 export default function CvPage() {
     const { cv } = useSiteContent();
     const [downloading, setDownloading] = useState(false);
 
     const handlePrint = useCallback(() => {
-        window.print();
+        trackEvent("cv-print", "Imprimir CV").finally(() => {
+            setTimeout(() => window.print(), 250);
+        });
     }, []);
 
     const handleDownloadPdf = useCallback(async () => {
@@ -39,6 +90,7 @@ export default function CvPage() {
                 })
                 .from(element)
                 .save();
+            await trackEvent("cv-download", "Descargar CV PDF");
         } finally {
             element.classList.remove("cv-sheet--pdf");
             setDownloading(false);
@@ -119,13 +171,22 @@ export default function CvPage() {
 
                 <section className="cv-section">
                     <h2 className="cv-section-title">Perfil</h2>
-                    <p className="cv-summary">{cv.summary}</p>
+                    <p className="cv-summary">
+                        {emphasizeKeywords(cv.summary)}
+                    </p>
                 </section>
 
                 <section className="cv-section">
                     <h2 className="cv-section-title">Experiencia</h2>
-                    {cv.experience.map((job) => (
-                        <div className="cv-job" key={job.id}>
+                    {cv.experience.map((job, jobIndex) => (
+                        <div
+                            className={
+                                jobIndex === 0
+                                    ? "cv-job cv-job--current"
+                                    : "cv-job"
+                            }
+                            key={job.id}
+                        >
                             <div className="cv-job-header">
                                 <h3 className="cv-job-role">
                                     {job.role}
@@ -141,7 +202,16 @@ export default function CvPage() {
                             </div>
                             <ul className="cv-bullets">
                                 {job.bullets.map((bullet, index) => (
-                                    <li key={`${job.id}-${index}`}>{bullet}</li>
+                                    <li
+                                        key={`${job.id}-${index}`}
+                                        className={
+                                            jobIndex === 0 && index < 3
+                                                ? "cv-bullet--key"
+                                                : undefined
+                                        }
+                                    >
+                                        {emphasizeKeywords(bullet)}
+                                    </li>
                                 ))}
                             </ul>
                         </div>
