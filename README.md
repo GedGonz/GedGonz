@@ -12,7 +12,6 @@ developer.Love("God","family","C#","Java","JavaScript","and more..");
 ## Me puedes encontrar en 👀:
 
 - 🎓 *[LinkedIn](https://www.linkedin.com/in/gedgonz)*
-- 💼 *[CV Personal](https://gedgonz.github.io/CV)*
 - 📃 *[Portafolio](https://gedgonz.github.io/GedGonz)*
 
 
